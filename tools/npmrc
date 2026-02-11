@@ -1,0 +1,2 @@
+@softleader:registry=https://repo.softleader.com.tw/repository/npm-public/
+prefix=$HOME/.npm-global

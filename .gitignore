@@ -1,0 +1,23 @@
+# Secrets
+.myenv
+**/.myenv
+ssh/id_*
+
+# macOS and shell runtime state
+**/.DS_Store
+**/.zsh_history
+**/.bash_history
+**/.zcompdump*
+
+# Tool-generated local files (do not track)
+.yarnrc
+.nuxtrc
+.stCommitMsg
+.gitflow_export
+
+# App runtime/auth state
+config/gcloud/
+config/gh/
+config/op/
+config/1Password/
+config/configstore/

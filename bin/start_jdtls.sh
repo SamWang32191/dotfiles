@@ -1,0 +1,70 @@
+#!/bin/sh
+DIR="$HOME/.local/share/opencode/bin/jdtls"
+LAUNCHER=$(ls "$DIR/plugins/org.eclipse.equinox.launcher_"*.jar)
+LOMBOK_JAR="$HOME/.lombok/lombok.jar"
+WORKSPACE_BASE="$HOME/.cache/jdtls"
+if command -v md5sum >/dev/null 2>&1; then
+    HASH=$(echo "$PWD" | md5sum | cut -d' ' -f1)
+else
+    HASH=$(echo "$PWD" | md5 -q)
+fi
+WORKSPACE="$WORKSPACE_BASE/$HASH"
+
+# Detect OS and architecture
+OS_TYPE="$(uname -s)"
+ARCH_TYPE="$(uname -m)"
+
+case "$OS_TYPE" in
+  Darwin)
+    if [ "$ARCH_TYPE" = "arm64" ] && [ -d "$DIR/config_mac_arm" ]; then
+      CONFIG_BASE="$DIR/config_mac_arm"
+    else
+      CONFIG_BASE="$DIR/config_mac"
+    fi
+    ;;
+  Linux)
+    if [ "$ARCH_TYPE" = "aarch64" ] && [ -d "$DIR/config_linux_arm" ]; then
+      CONFIG_BASE="$DIR/config_linux_arm"
+    else
+      CONFIG_BASE="$DIR/config_linux"
+    fi
+    ;;
+  *)
+    CONFIG_BASE="$DIR/config_linux"
+    ;;
+esac
+
+# Prefer a writable configuration directory to avoid JDTLS warnings.
+if [ -w "$CONFIG_BASE" ]; then
+  CONFIG="$CONFIG_BASE"
+else
+  CONFIG="$HOME/.cache/jdtls/$(basename "$CONFIG_BASE")"
+  if [ ! -d "$CONFIG" ] || [ ! -f "$CONFIG/config.ini" ]; then
+    mkdir -p "$CONFIG"
+    cp -R "$CONFIG_BASE"/. "$CONFIG"/
+  fi
+fi
+
+exec java \
+  -Declipse.application=org.eclipse.jdt.ls.core.id1 \
+  -Dosgi.bundles.defaultStartLevel=4 \
+  -Declipse.product=org.eclipse.jdt.ls.core.product \
+  -Dosgi.checkConfiguration=true \
+  -Xms1G -Xmx2G \
+  --add-modules=ALL-SYSTEM \
+  --add-exports java.base/jdk.internal.misc=ALL-UNNAMED \
+  --add-opens java.base/java.util=ALL-UNNAMED \
+  --add-opens java.base/java.lang=ALL-UNNAMED \
+  --add-opens java.base/java.io=ALL-UNNAMED \
+  --add-opens java.base/java.nio=ALL-UNNAMED \
+  --add-opens java.base/sun.nio.ch=ALL-UNNAMED \
+  --add-opens java.compiler/javax.annotation.processing=ALL-UNNAMED \
+  --add-opens java.compiler/javax.lang.model=ALL-UNNAMED \
+  --add-opens java.compiler/javax.lang.model.element=ALL-UNNAMED \
+  --add-opens java.compiler/javax.lang.model.type=ALL-UNNAMED \
+  --add-opens java.compiler/javax.lang.model.util=ALL-UNNAMED \
+  --add-opens java.compiler/javax.tools=ALL-UNNAMED \
+  -javaagent:"$LOMBOK_JAR" \
+  -jar "$LAUNCHER" \
+  -configuration "$CONFIG" \
+  -data "$WORKSPACE"

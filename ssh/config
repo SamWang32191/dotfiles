@@ -1,0 +1,32 @@
+Host ocp-uat.cki.com.tw
+  HostName ocp-uat.cki.com.tw
+  User sluser
+
+Host 192.168.1.30
+  User sam.wang
+  IdentityFile ~/.ssh/id_rsa_sl_server
+
+Host 192.168.1.33
+  User root
+  IdentityFile ~/.ssh/id_rsa_sl_server
+
+# 中信產3合一的Bitbucket帳戶
+Host eps.bitbucket.org
+  HostName bitbucket.org
+  User git
+  IdentityFile ~/.ssh/id_rsa_bitbucket_eps
+
+# 預設Bitbucket，使用三合一金鑰
+Host bitbucket.org
+  HostName bitbucket.org
+  User git
+  IdentityFile ~/.ssh/id_rsa_bitbucket_eps
+
+# 中信產再保的Bitbucket帳戶
+Host reins.bitbucket.org
+  HostName bitbucket.org
+  User git
+  IdentityFile ~/.ssh/id_rsa_bitbucket_reins
+
+Host *
+  IdentityAgent "~/Library/Group Containers/2BUA8C4S2C.com.1password/t/agent.sock"

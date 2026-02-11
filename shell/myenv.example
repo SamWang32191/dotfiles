@@ -1,0 +1,15 @@
+# export OPENCODE_SERVER_USERNAME=admin
+# export OPENCODE_SERVER_PASSWORD=<your-password>
+
+# export ANTHROPIC_BASE_URL="http://127.0.0.1:8045"
+# export ANTHROPIC_API_KEY="<your-api-key>"
+
+# export GOOGLE_CLOUD_PROJECT=<your-project>
+# export VERTEX_LOCATION=global
+# export GOOGLE_APPLICATION_CREDENTIALS="<path-to-credentials>"
+
+export MCP_GITHUB_PERSONAL_ACCESS_TOKEN=<your-github-pat>
+
+# Eureka examples (keep real values in ~/.myenv only)
+# export eureka_instance_metadataMap_zone=<your-zone>
+# export eureka_instance_hostname=<your-hostname>
