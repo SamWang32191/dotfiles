@@ -67,6 +67,7 @@ echo "Installing dotfiles from: $DOTFILES_DIR"
 # Intentionally no mapping for ~/.myenv (secret file).
 
 declare -a LINK_MAPPINGS=(
+  "zsh/zprofile|$HOME/.zprofile"
   "zsh/zshrc|$HOME/.zshrc"
   "zsh/path.zsh|$HOME/.zsh/path.zsh"
   "zsh/omz.zsh|$HOME/.zsh/omz.zsh"
