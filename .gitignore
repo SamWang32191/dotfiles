@@ -21,3 +21,6 @@ config/gh/
 config/op/
 config/1Password/
 config/configstore/
+
+# Local-only config (do not track)
+config/opencode/oh-my-opencode.json
