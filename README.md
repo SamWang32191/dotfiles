@@ -9,6 +9,7 @@
 - `ssh/`
 - `tools/`
 - `config/btop/`
+- `config/codex/`
 - `config/ghostty/`
 - `config/opencode/`
 - `brew/`

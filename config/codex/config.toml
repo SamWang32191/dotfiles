@@ -1,0 +1,89 @@
+model = "gpt-5.3-codex"
+model_reasoning_effort = "high"
+personality = "pragmatic"
+[projects."/Users/samwang/.config/opencode"]
+trust_level = "trusted"
+
+[projects."/Users/samwang/Softleader/Jasmine-v3/Backend/fairybell-auth"]
+trust_level = "trusted"
+
+[projects."/Users/samwang/Repo/sql-update-checker"]
+trust_level = "trusted"
+
+[projects."/Users/samwang/tmp/search"]
+trust_level = "trusted"
+
+[projects."/Users/samwang/Repo/opencode"]
+trust_level = "trusted"
+
+[projects."/Users/samwang/Softleader/Jasmine-v3/Frontend/fairybell-cki-ui"]
+trust_level = "trusted"
+
+[projects."/Users/samwang/Downloads/tmp"]
+trust_level = "trusted"
+
+[projects."/Users/samwang/tmp"]
+trust_level = "trusted"
+
+[projects."/Users/samwang/Softleader/Jasmine-v3/Backend/sso"]
+trust_level = "trusted"
+
+[projects."/Users/samwang/Repo/switch-omo-config-json"]
+trust_level = "trusted"
+
+[projects."/Users/samwang/.bin"]
+trust_level = "trusted"
+
+[projects."/Users/samwang/Softleader/softleader-charts"]
+trust_level = "trusted"
+
+[projects."/Users/samwang/Softleader/kapok"]
+trust_level = "trusted"
+
+[projects."/Users/samwang/Softleader/Jasmine/Common-Rpc/softleader-uw-rpc"]
+trust_level = "trusted"
+
+[projects."/Users/samwang/tmp/refactor-uw"]
+trust_level = "trusted"
+
+[projects."/Users/samwang"]
+trust_level = "trusted"
+
+[projects."/Users/samwang/tmp/excel-tmp"]
+trust_level = "trusted"
+
+[projects."/Users/samwang/Softleader/Jasmine-v3/Backend/policy"]
+trust_level = "trusted"
+
+[projects."/Users/samwang/.config/ghostty"]
+trust_level = "trusted"
+
+[projects."/Users/samwang/Repo/sdkman-manager"]
+trust_level = "trusted"
+
+[projects."/Users/samwang/Repo/sdkman-gui-native"]
+trust_level = "trusted"
+
+[projects."/Users/samwang/Repo/dex"]
+trust_level = "trusted"
+
+[projects."/Users/samwang/Softleader/Reinsurance/softleader-reinsurance"]
+trust_level = "trusted"
+
+[projects."/Users/samwang/dotfiles"]
+trust_level = "trusted"
+
+[features]
+unified_exec = true
+shell_snapshot = true
+steer = true
+collab = true
+
+[notice]
+hide_full_access_warning = true
+
+[notice.model_migrations]
+"gpt-5.2" = "gpt-5.3-codex"
+
+[tui]
+status_line = ["project-root", "git-branch", "model-with-reasoning", "context-used", "five-hour-limit"]

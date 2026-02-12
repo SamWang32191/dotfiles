@@ -82,6 +82,7 @@ declare -a LINK_MAPPINGS=(
   "config/btop/btop.conf|$HOME/.config/btop/btop.conf"
   "config/macmon.json|$HOME/.config/macmon.json"
   "config/ghostty/config|$HOME/.config/ghostty/config"
+  "config/codex/config.toml|$HOME/.codex/config.toml"
   "config/opencode/opencode.json|$HOME/.config/opencode/opencode.json"
   "bin/start_jdtls.sh|$HOME/.bin/start_jdtls.sh"
 )
