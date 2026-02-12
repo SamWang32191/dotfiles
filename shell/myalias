@@ -20,5 +20,5 @@ alias ocw='opencode web'
 alias ocal='opencode attach http://localhost:4096'
 alias omo-switch='~/Repo/switch-omo-config-json/switch-omo-config.sh'
 alias python='python3'
-alias start_jdtls='~/.bin/start_jdtls.sh'
+alias start_jdtls='/Users/samwang/dotfiles/bin/start_jdtls.sh'
 
