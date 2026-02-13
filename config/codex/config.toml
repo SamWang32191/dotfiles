@@ -73,6 +73,9 @@ trust_level = "trusted"
 [projects."/Users/samwang/dotfiles"]
 trust_level = "trusted"
 
+[projects."/Users/samwang/Softleader/Jasmine-v3/Backend/fairybell-sso"]
+trust_level = "trusted"
+
 [features]
 unified_exec = true
 shell_snapshot = true

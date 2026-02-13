@@ -13,7 +13,7 @@
   "lsp": {
     "jdtls": {
       "command": [
-        "start_jdtls"
+        "/Users/samwang/dotfiles/bin/start_jdtls.sh"
       ],
       "extensions": [
         ".java"
