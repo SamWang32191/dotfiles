@@ -50,7 +50,10 @@ exec java \
   -Dosgi.bundles.defaultStartLevel=4 \
   -Declipse.product=org.eclipse.jdt.ls.core.product \
   -Dosgi.checkConfiguration=true \
+  -Dosgi.sharedConfiguration.area.readOnly=true \
   -Xms1G -Xmx2G \
+  -XX:+TieredCompilation \
+  -XX:TieredStopAtLevel=1 \
   --add-modules=ALL-SYSTEM \
   --add-exports java.base/jdk.internal.misc=ALL-UNNAMED \
   --add-opens java.base/java.util=ALL-UNNAMED \

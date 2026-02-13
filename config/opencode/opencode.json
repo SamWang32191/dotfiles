@@ -8,7 +8,6 @@
       "enabled": true
     }
   },
-  "model": "opencode/kimi-k2.5-free",
   "small_model": "opencode/minimax-m2.1-free",
   "lsp": {
     "jdtls": {
