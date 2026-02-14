@@ -17,10 +17,14 @@ export SDKMAN_DIR="${HOME}/.sdkman"
 if [[ -r "$SDKMAN_DIR/var/candidates" ]]; then
   for _sdkman_name in ${(s:,:)$(<"$SDKMAN_DIR/var/candidates")}; do
     _sdkman_candidate_bin="$SDKMAN_DIR/candidates/${_sdkman_name}/current/bin"
-    if [[ -d "$_sdkman_candidate_bin" && ":$PATH:" != *":$_sdkman_candidate_bin:"* ]]; then
-      PATH="$_sdkman_candidate_bin:$PATH"
+    if [[ -d "$_sdkman_candidate_bin" ]]; then
+      # Always move candidate bin to the front. This avoids accidentally
+      # hitting system stubs like /usr/bin/java when the candidate bin is
+      # already present later in PATH.
+      path=("$_sdkman_candidate_bin" ${path:#"$_sdkman_candidate_bin"})
     fi
   done
+  unhash java 2>/dev/null || true
   unset _sdkman_name _sdkman_candidate_bin
 fi
 sdk() {

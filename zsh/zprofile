@@ -9,3 +9,15 @@ source ~/.orbstack/shell/init.zsh 2>/dev/null || :
 
 # Keep plugin list visible in non-interactive login shells (`zsh -l -c`).
 plugins=(aliases kubectl zsh-completions zsh-autosuggestions zsh-syntax-highlighting git z brew)
+
+# SDKMAN (minimal): make sure `java` resolves to SDKMAN Java in login shells.
+export SDKMAN_DIR="${HOME}/.sdkman"
+_sdkman_java_bin="$SDKMAN_DIR/candidates/java/current/bin"
+if [[ -d "$_sdkman_java_bin" ]]; then
+  path=("$_sdkman_java_bin" ${path:#"$_sdkman_java_bin"})
+  unhash java 2>/dev/null || true
+  if [[ -z "${JAVA_HOME:-}" && -d "$SDKMAN_DIR/candidates/java/current" ]]; then
+    export JAVA_HOME="$SDKMAN_DIR/candidates/java/current"
+  fi
+fi
+unset _sdkman_java_bin
