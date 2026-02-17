@@ -1,5 +1,5 @@
 model = "gpt-5.3-codex"
-model_reasoning_effort = "medium"
+model_reasoning_effort = "high"
 personality = "pragmatic"
 [projects."/Users/samwang/.config/opencode"]
 trust_level = "trusted"
@@ -74,6 +74,18 @@ trust_level = "trusted"
 trust_level = "trusted"
 
 [projects."/Users/samwang/Softleader/Jasmine-v3/Backend/fairybell-sso"]
+trust_level = "trusted"
+
+[projects."/Users/samwang/Softleader/Jasmine-v3/Backend/auth"]
+trust_level = "trusted"
+
+[projects."/Users/samwang/tmp/test"]
+trust_level = "trusted"
+
+[projects."/Users/samwang/.agents/skills"]
+trust_level = "trusted"
+
+[projects."/Users/samwang/.config/opencode/plugins"]
 trust_level = "trusted"
 
 [features]
