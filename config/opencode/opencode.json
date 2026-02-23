@@ -23,7 +23,7 @@
   "provider": {
     "opencode": {
       "models": {
-        "claude-sonnet-4-5": {
+        "claude-sonnet-4-6": {
           "limit": {
             "context": 200000,
             "output": 64000
@@ -40,7 +40,7 @@
     "google": {
       "models": {
         "antigravity-gemini-3-pro": {
-          "name": "Gemini 3 Pro (Antigravity)",
+          "name": "Gemini 3 Pro (Agy)",
           "limit": {
             "context": 1048576,
             "output": 65535
@@ -65,7 +65,7 @@
           }
         },
         "antigravity-gemini-3.1-pro": {
-          "name": "Gemini 3.1 Pro (Antigravity)",
+          "name": "Gemini 3.1 Pro (Agy)",
           "limit": {
             "context": 1048576,
             "output": 65535
@@ -90,7 +90,7 @@
           }
         },
         "antigravity-gemini-3-flash": {
-          "name": "Gemini 3 Flash (Antigravity)",
+          "name": "Gemini 3 Flash (Agy)",
           "limit": {
             "context": 1048576,
             "output": 65536
@@ -121,7 +121,7 @@
           }
         },
         "antigravity-claude-sonnet-4-6": {
-          "name": "Claude Sonnet 4.6 (Antigravity)",
+          "name": "Claude Sonnet 4.6 (Agy)",
           "limit": {
             "context": 200000,
             "output": 64000
@@ -138,7 +138,7 @@
           }
         },
         "antigravity-claude-opus-4-6-thinking": {
-          "name": "Claude Opus 4.6 Thinking (Antigravity)",
+          "name": "Claude Opus 4.6 Thinking (Agy)",
           "limit": {
             "context": 200000,
             "output": 64000
