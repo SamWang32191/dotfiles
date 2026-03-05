@@ -45,7 +45,23 @@ else
   fi
 fi
 
-exec java \
+SDKMAN_JAVA_DIR="${SDKMAN_CANDIDATES_DIR:-${SDKMAN_DIR:-$HOME/.sdkman}/candidates}/java"
+JDTLS_PINNED_JAVA_HOME="${JDTLS_JAVA_HOME:-$SDKMAN_JAVA_DIR/21.0.9-tem}"
+
+if [ -x "$JDTLS_PINNED_JAVA_HOME/bin/java" ]; then
+  JAVA_BIN="$JDTLS_PINNED_JAVA_HOME/bin/java"
+elif [ -x "$JAVA_HOME/bin/java" ]; then
+  JAVA_BIN="$JAVA_HOME/bin/java"
+else
+  JAVA_BIN="$(command -v java)"
+fi
+
+if [ -z "$JAVA_BIN" ] || [ ! -x "$JAVA_BIN" ]; then
+  echo "Failed to locate java runtime for jdtls" >&2
+  exit 1
+fi
+
+exec "$JAVA_BIN" \
   -Declipse.application=org.eclipse.jdt.ls.core.id1 \
   -Dosgi.bundles.defaultStartLevel=4 \
   -Declipse.product=org.eclipse.jdt.ls.core.product \

@@ -8,6 +8,7 @@ shell_snapshot = true
 steer = true
 multi_agent = true
 prevent_idle_sleep = true
+js_repl = true
 
 [notice]
 hide_full_access_warning = true
@@ -114,4 +115,34 @@ trust_level = "trusted"
 trust_level = "trusted"
 
 [projects."/Users/samwang/tmp/20260205"]
+trust_level = "trusted"
+
+[projects."/Users/samwang/Repo/PinSnap"]
+trust_level = "trusted"
+
+[projects."/Users/samwang/Softleader/Jasmine-v3/Backend/ctbc-integration"]
+trust_level = "trusted"
+
+[projects."/Users/samwang/Softleader/Jasmine-v3/Backend/jasmine-sql-checker"]
+trust_level = "trusted"
+
+[projects."/Users/samwang/Softleader/Jasmine-v3/Backend/jasmine-release-tool"]
+trust_level = "trusted"
+
+[projects."/Users/samwang/Repo/superpowers"]
+trust_level = "trusted"
+
+[projects."/Users/samwang/tmp/20260303"]
+trust_level = "trusted"
+
+[projects."/Users/samwang/Softleader/Jasmine/Cas/softleader-jasmine-cas"]
+trust_level = "trusted"
+
+[projects."/Users/samwang/tmp/sbom-tmp/demo"]
+trust_level = "trusted"
+
+[projects."/Users/samwang/Softleader/Jasmine/Cas/softleader-jasmine-cas-ui"]
+trust_level = "trusted"
+
+[projects."/Users/samwang/Downloads/cki-middle-main"]
 trust_level = "trusted"
