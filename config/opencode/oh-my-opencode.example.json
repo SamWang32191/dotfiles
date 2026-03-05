@@ -1,0 +1,38 @@
+{
+  "$schema": "https://raw.githubusercontent.com/code-yeongyu/oh-my-opencode/dev/assets/oh-my-opencode.schema.json",
+  "sisyphus_agent": {
+    "default_builder_enabled": true,
+    "planner_enabled": true,
+    "disabled": true,
+    "replace_plan": false
+  },
+  "disabled_tools": [
+    "call_omo_agent"
+  ],
+  "disabled_agents": [
+    "sisyphus",
+    "sisyphus_agent",
+    "hephaestus",
+    "oracle",
+    "librarian",
+    "explore",
+    "multimodal-looker",
+    "prometheus",
+    "metis",
+    "momus",
+    "atlas"
+  ],
+  "disabled_hooks": [
+    "keyword-detector",
+    "agent-usage-reminder",
+    "category-skill-reminder",
+    "ralph-loop",
+    "start-work",
+    "atlas",
+    "prometheus-md-only",
+    "sisyphus-junior-notepad",
+    "no-sisyphus-gpt",
+    "no-hephaestus-non-gpt",
+    "unstable-agent-babysitter"
+  ]
+}
