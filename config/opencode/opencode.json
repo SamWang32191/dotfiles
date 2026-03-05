@@ -3,8 +3,6 @@
   "plugin": [
     "oh-my-opencode@latest"
   ],
-  "model": "minimax-coding-plan/MiniMax-M2.5",
-  "small_model": "minimax-coding-plan/MiniMax-M2.5",
   "lsp": {
     "jdtls": {
       "command": [
