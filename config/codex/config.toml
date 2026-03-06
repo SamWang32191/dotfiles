@@ -1,5 +1,7 @@
-model = "gpt-5.3-codex"
-model_reasoning_effort = "medium"
+model = "gpt-5.4"
+model_reasoning_effort = "high"
+model_context_window = 1000000
+model_auto_compact_token_limit = 900000
 personality = "pragmatic"
 
 [features]
@@ -157,4 +159,10 @@ trust_level = "trusted"
 trust_level = "trusted"
 
 [projects."/Users/samwang/Repo/tmp"]
+trust_level = "trusted"
+
+[projects."/Users/samwang/Repo/workspace/oh-my-opencode"]
+trust_level = "trusted"
+
+[projects."/Users/samwang/Repo/workspace-symphony/symphony"]
 trust_level = "trusted"
