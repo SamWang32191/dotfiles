@@ -1,5 +1,5 @@
 model = "gpt-5.4"
-model_reasoning_effort = "high"
+model_reasoning_effort = "xhigh"
 model_context_window = 1000000
 model_auto_compact_token_limit = 900000
 personality = "pragmatic"
@@ -14,162 +14,76 @@ steer = true
 multi_agent = true
 prevent_idle_sleep = true
 js_repl = true
-apps = true
 
 [notice]
 hide_full_access_warning = true
 
 [tui]
-status_line = ["project-root", "git-branch", "model-with-reasoning", "five-hour-limit", "weekly-limit", "context-used"]
+status_line = [
+    "project-root",
+    "git-branch",
+    "model-with-reasoning",
+    "five-hour-limit",
+    "weekly-limit",
+    "context-used",
+]
 
-[agents.quick]
-description = "Use for low-risk, tightly scoped tasks that can be completed in 1-3 steps (single-file edits, simple shell commands, quick summaries). Avoid for multi-file refactors, deep debugging, architecture decisions, or high-stakes analysis."
-config_file = "./agents/quick.toml"
+[agents]
+max_threads = 10
 
-[agents.implementer]
-description = "Use when a concrete implementation plan already exists and execution requires complex, multi-file edits or refactors. Follow the plan step by step, coordinate dependent changes, and validate results. Avoid for lightweight, one-off tasks."
-config_file = "./agents/implementer.toml"
+[agents.explore]
+config_file = "./agents/explore.toml"
+description = """Use `explorer` for specific codebase questions.
+Explorers are fast and authoritative.
+Typical tasks:
+- Find files by patterns (glob)
+- Search code for keywords
+- Answer questions about codebase structure
+Rules:
+- Be specific in your questions - the more precise, the better the answer
+- In order to avoid redundant work, avoid exploring the same problem that explorers have already covered
+- You are encouraged to spawn multiple explorers in parallel when you have distinct questions that can be answered independently
+- Reuse existing explorers for related questions"""
 
-[projects."/Users/samwang/.config/opencode"]
-trust_level = "trusted"
+[agents.general]
+config_file = "./agents/general.toml"
+description = """Use `general` for research and investigation tasks that require multiple steps.
+Typical tasks:
+- Complex questions requiring gathering information from multiple sources
+- Multi-step investigation tasks
+- Executing parallel research on independent topics
+Rules:
+- This agent is slower than explorer - use explorer for simple, single questions
+- Can run multiple independent research tasks in parallel to save time
+- When you have 2+ independent research angles, spawn multiple general agents in parallel"""
 
-[projects."/Users/samwang/Softleader/Jasmine-v3/Backend/fairybell-auth"]
-trust_level = "trusted"
+[agents.deep]
+config_file = "./agents/deep.toml"
+description = """Use `deep` for deep implementation and execution tasks.
+Typical tasks:
+- Implementing features or bug fixes
+- Complex refactoring work
+- Writing or modifying code
+Rules:
+- This agent can modify files - use for write operations, not just research
+- Assign **clear ownership** of files/modules - specify exactly which files this agent is responsible for
+- The agent is **not alone** - other agents may be working in parallel, so coordinate to avoid conflicts
+- When delegating coding work, instruct the agent to list changed files in the final answer"""
 
-[projects."/Users/samwang/Repo/sql-update-checker"]
-trust_level = "trusted"
-
-[projects."/Users/samwang/tmp/search"]
-trust_level = "trusted"
-
-[projects."/Users/samwang/Repo/opencode"]
-trust_level = "trusted"
-
-[projects."/Users/samwang/Softleader/Jasmine-v3/Frontend/fairybell-cki-ui"]
-trust_level = "trusted"
-
-[projects."/Users/samwang/Downloads/tmp"]
-trust_level = "trusted"
-
-[projects."/Users/samwang/tmp"]
-trust_level = "trusted"
-
-[projects."/Users/samwang/Softleader/Jasmine-v3/Backend/sso"]
-trust_level = "trusted"
-
-[projects."/Users/samwang/Repo/switch-omo-config-json"]
-trust_level = "trusted"
-
-[projects."/Users/samwang/.bin"]
-trust_level = "trusted"
-
-[projects."/Users/samwang/Softleader/softleader-charts"]
-trust_level = "trusted"
-
-[projects."/Users/samwang/Softleader/kapok"]
-trust_level = "trusted"
-
-[projects."/Users/samwang/Softleader/Jasmine/Common-Rpc/softleader-uw-rpc"]
-trust_level = "trusted"
-
-[projects."/Users/samwang/tmp/refactor-uw"]
-trust_level = "trusted"
-
-[projects."/Users/samwang"]
-trust_level = "trusted"
-
-[projects."/Users/samwang/tmp/excel-tmp"]
-trust_level = "trusted"
-
-[projects."/Users/samwang/Softleader/Jasmine-v3/Backend/policy"]
-trust_level = "trusted"
-
-[projects."/Users/samwang/.config/ghostty"]
-trust_level = "trusted"
-
-[projects."/Users/samwang/Repo/sdkman-manager"]
-trust_level = "trusted"
-
-[projects."/Users/samwang/Repo/sdkman-gui-native"]
-trust_level = "trusted"
-
-[projects."/Users/samwang/Repo/dex"]
-trust_level = "trusted"
-
-[projects."/Users/samwang/Softleader/Reinsurance/softleader-reinsurance"]
-trust_level = "trusted"
+[agents.writing]
+config_file = "./agents/writing.toml"
+description = """Use `writing` for documentation and content-focused tasks.
+Typical tasks:
+- Writing or updating documentation (README, API docs)
+- Content polishing and style improvements
+- Creating prose content
+Rules:
+- Focus on clarity and readability
+- Follow existing documentation style in the codebase
+- Do not make code changes - only content/polishing work"""
 
 [projects."/Users/samwang/dotfiles"]
 trust_level = "trusted"
 
-[projects."/Users/samwang/Softleader/Jasmine-v3/Backend/fairybell-sso"]
-trust_level = "trusted"
-
-[projects."/Users/samwang/Softleader/Jasmine-v3/Backend/auth"]
-trust_level = "trusted"
-
-[projects."/Users/samwang/tmp/test"]
-trust_level = "trusted"
-
-[projects."/Users/samwang/.agents/skills"]
-trust_level = "trusted"
-
-[projects."/Users/samwang/.config/opencode/plugins"]
-trust_level = "trusted"
-
-[projects."/Users/samwang/Softleader/Jasmine-v3/Backend/library"]
-trust_level = "trusted"
-
-[projects."/Users/samwang/tmp/20260205"]
-trust_level = "trusted"
-
-[projects."/Users/samwang/Repo/PinSnap"]
-trust_level = "trusted"
-
-[projects."/Users/samwang/Softleader/Jasmine-v3/Backend/ctbc-integration"]
-trust_level = "trusted"
-
-[projects."/Users/samwang/Softleader/Jasmine-v3/Backend/jasmine-sql-checker"]
-trust_level = "trusted"
-
-[projects."/Users/samwang/Softleader/Jasmine-v3/Backend/jasmine-release-tool"]
-trust_level = "trusted"
-
-[projects."/Users/samwang/Repo/superpowers"]
-trust_level = "trusted"
-
-[projects."/Users/samwang/tmp/20260303"]
-trust_level = "trusted"
-
-[projects."/Users/samwang/Softleader/Jasmine/Cas/softleader-jasmine-cas"]
-trust_level = "trusted"
-
-[projects."/Users/samwang/tmp/sbom-tmp/demo"]
-trust_level = "trusted"
-
-[projects."/Users/samwang/Softleader/Jasmine/Cas/softleader-jasmine-cas-ui"]
-trust_level = "trusted"
-
-[projects."/Users/samwang/Downloads/cki-middle-main"]
-trust_level = "trusted"
-
-[projects."/Users/samwang/Repo/oh-my-opencode"]
-trust_level = "trusted"
-
-[projects."/Users/samwang/Repo/agent-prompts"]
-trust_level = "trusted"
-
-[projects."/Users/samwang/.claude"]
-trust_level = "trusted"
-
-[projects."/Users/samwang/Repo/tmp"]
-trust_level = "trusted"
-
-[projects."/Users/samwang/Repo/workspace/oh-my-opencode"]
-trust_level = "trusted"
-
-[projects."/Users/samwang/Repo/workspace-symphony/symphony"]
-trust_level = "trusted"
-
-[projects."/Users/samwang/Repo/workspace-symphony"]
+[projects."/Users/samwang/Repo/workspace"]
 trust_level = "trusted"
