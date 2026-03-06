@@ -1,8 +1,9 @@
 ---
-name: Deep
+name: deep
 description: Deep implementation specialist
 mode: subagent
 temperature: 0.3
+color: "#0000C6"
 ---
 
 <Rules>

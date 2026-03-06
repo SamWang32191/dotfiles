@@ -1,8 +1,9 @@
 ---
-name: Writing
+name: writing
 description: Writing and prose specialist for documentation and style-focused content updates.
 mode: subagent
 temperature: 0.6
+color: "#B766AD"
 ---
 
 <Rules>

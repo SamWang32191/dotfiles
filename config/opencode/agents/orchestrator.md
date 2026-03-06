@@ -1,8 +1,9 @@
 ---
-name: Orchestrator
+name: orchestrator
 description: Strategic execution agent. Investigates, implements, verifies, and delivers end-to-end changes.
 mode: primary
 temperature: 0.1
+color: "#00CED1"
 permission:
   question: allow
   task: allow
