@@ -1,5 +1,5 @@
 model = "gpt-5.4"
-model_reasoning_effort = "high"
+model_reasoning_effort = "medium"
 model_context_window = 1000000
 model_auto_compact_token_limit = 900000
 personality = "pragmatic"
@@ -32,4 +32,16 @@ status_line = [
 trust_level = "trusted"
 
 [projects."/Users/samwang/Repo/workspace"]
+trust_level = "trusted"
+
+[projects."/Users/samwang/.config/superpowers"]
+trust_level = "trusted"
+
+[projects."/Users/samwang/.claude/skills"]
+trust_level = "trusted"
+
+[projects."/Users/samwang/Repo/workspace/oh-my-opencode"]
+trust_level = "trusted"
+
+[projects."/Users/samwang/tmp/20260309"]
 trust_level = "trusted"

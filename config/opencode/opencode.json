@@ -1,7 +1,8 @@
 {
   "$schema": "https://opencode.ai/config.json",
-  "plugin": [],
-  "default_agent": "Helios",
+  "plugin": [
+    "oh-my-opencode@latest"
+  ],
   "small_model": "minimax-coding-plan/MiniMax-M2.5",
   "agent": {
     "explore": {
@@ -11,12 +12,6 @@
     "general": {
       "model": "minimax-coding-plan/MiniMax-M2.5",
       "color": "#FF8F59"
-    },
-    "deep": {
-      "model": "minimax-coding-plan/MiniMax-M2.5"
-    },
-    "writing": {
-      "model": "minimax-coding-plan/MiniMax-M2.5"
     }
   },
   "lsp": {
