@@ -30,3 +30,7 @@ export PATH="${ANTIGRAVITY_PATH}:$PATH"
 # NPM Global
 export NPM_GLOBAL="${HOME}/.npm-global/bin"
 export PATH="${NPM_GLOBAL}:$PATH"
+
+# Local bin
+export LOCAL_INSTALL_BIN_PATH="${HOME}/.local/bin"
+export PATH="${LOCAL_INSTALL_BIN_PATH}:$PATH"

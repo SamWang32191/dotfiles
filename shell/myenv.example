@@ -9,6 +9,7 @@
 # export GOOGLE_APPLICATION_CREDENTIALS="<path-to-credentials>"
 
 export MCP_GITHUB_PERSONAL_ACCESS_TOKEN=<your-github-pat>
+export MINIMAX_API_KEY=<yout-api-key>
 
 # Eureka examples (keep real values in ~/.myenv only)
 # export eureka_instance_metadataMap_zone=<your-zone>
