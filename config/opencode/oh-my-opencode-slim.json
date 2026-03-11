@@ -1,0 +1,45 @@
+{
+  "preset": "manual",
+  "presets": {
+    "manual": {
+      "orchestrator": {
+        "model": "openai/gpt-5.4",
+        "variant": "medium",
+        "skills": ["*"],
+        "mcps": ["websearch"]
+      },
+      "oracle": {
+        "model": "openai/gpt-5.4",
+        "variant": "high",
+        "skills": [],
+        "mcps": []
+      },
+      "designer": {
+        "model": "openai/gpt-5.4",
+        "variant": "medium",
+        "skills": ["agent-browser"],
+        "mcps": []
+      },
+      "explorer": {
+        "model": "openai/gpt-5.3-codex",
+        "skills": ["using-superpowers"],
+        "mcps": []
+      },
+      "librarian": {
+        "model": "openai/gpt-5.3-codex",
+        "skills": ["using-superpowers"],
+        "mcps": ["websearch", "context7", "grep_app"]
+      },
+      "fixer": {
+        "model": "openai/gpt-5.4",
+        "variant": "medium",
+        "skills": ["using-superpowers"],
+        "mcps": []
+      }
+    }
+  },
+  "balanceProviderUsage": false,
+  "fallback": {
+    "enabled": false
+  }
+}
