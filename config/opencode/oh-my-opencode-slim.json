@@ -11,29 +11,54 @@
       "oracle": {
         "model": "openai/gpt-5.4",
         "variant": "high",
-        "skills": [],
+        "skills": [
+          "brainstorming",
+          "systematic-debugging",
+          "simplify",
+          "receiving-code-review",
+          "lessons-learned",
+          "using-superpowers"
+        ],
         "mcps": []
       },
       "designer": {
         "model": "openai/gpt-5.4",
         "variant": "medium",
-        "skills": ["agent-browser"],
+        "skills": [
+          "agent-browser",
+          "brainstorming",
+          "verification-before-completion",
+          "using-git-worktrees",
+          "finishing-a-development-branch",
+          "lessons-learned",
+          "using-superpowers"
+        ],
         "mcps": []
       },
       "explorer": {
         "model": "openai/gpt-5.3-codex",
-        "skills": ["using-superpowers"],
+        "skills": ["lessons-learned", "using-superpowers", "find-skills"],
         "mcps": []
       },
       "librarian": {
         "model": "openai/gpt-5.3-codex",
-        "skills": ["using-superpowers"],
+        "skills": ["lessons-learned", "using-superpowers", "find-skills"],
         "mcps": ["websearch", "context7", "grep_app"]
       },
       "fixer": {
         "model": "openai/gpt-5.4",
         "variant": "medium",
-        "skills": ["using-superpowers"],
+        "skills": [
+          "verification-before-completion",
+          "using-git-worktrees",
+          "test-driven-development",
+          "systematic-debugging",
+          "requesting-code-review",
+          "finishing-a-development-branch",
+          "executing-plans",
+          "lessons-learned",
+          "using-superpowers"
+        ],
         "mcps": []
       }
     }

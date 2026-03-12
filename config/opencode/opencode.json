@@ -1,37 +1,13 @@
 {
   "$schema": "https://opencode.ai/config.json",
-  "plugin": ["oh-my-opencode@latest"],
+  "plugin": ["oh-my-opencode-slim@latest"],
   "small_model": "minimax-coding-plan/MiniMax-M2.5",
   "agent": {
     "explore": {
-      "model": "minimax-coding-plan/MiniMax-M2.5",
-      "color": "#79FF79"
+      "disable": true
     },
     "general": {
-      "model": "minimax-coding-plan/MiniMax-M2.5",
-      "color": "#FF8F59"
-    },
-    "Abyss": {
-      "model": "openai/gpt-5.4",
-      "variant": "high"
-    },
-    "writing": {
-      "model": "minimax-coding-plan/MiniMax-M2.5"
-    }
-  },
-  "mcp": {
-    "MiniMax": {
-      "type": "local",
-      "command": [
-        "uvx",
-        "minimax-coding-plan-mcp",
-        "-y"
-      ],
-      "environment": {
-        "MINIMAX_API_KEY": "{env:MINIMAX_API_KEY}",
-        "MINIMAX_API_HOST": "https://api.minimax.io"
-      },
-      "enabled": true
+      "disable": true
     }
   },
   "lsp": {
