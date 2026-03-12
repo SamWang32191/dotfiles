@@ -86,6 +86,7 @@ declare -a LINK_MAPPINGS=(
   "config/gemini/GEMINI.md|$HOME/.gemini/GEMINI.md"
   "config/opencode/opencode.json|$HOME/.config/opencode/opencode.json"
   "config/opencode/oh-my-opencode-slim.json|$HOME/.config/opencode/oh-my-opencode-slim.json"
+  "config/opencode/command|$HOME/.config/opencode/command"
   "config/opencode/agents|$HOME/.config/opencode/agents"
   "config/opencode/prompts|$HOME/.config/opencode/prompts"
   "bin/start_jdtls.sh|$HOME/.bin/start_jdtls.sh"
