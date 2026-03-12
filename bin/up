@@ -1,0 +1,35 @@
+#!/bin/zsh
+
+echo "🚀 開始執行系統與 Skill 更新..."
+
+# 1. Homebrew 更新
+if command -v brew &> /dev/null; then
+    echo "\n📦 更新 Homebrew..."
+    brew update && brew outdated && brew upgrade
+else
+    echo "\n⚠️ 未安裝 Homebrew，跳過。"
+fi
+
+# 2. 更新 Skill
+update_repo() {
+    local repo_path=$1
+    if [ -d "$repo_path" ]; then
+        echo "\n🌿 更新Skill: $repo_path"
+        (cd "$repo_path" && git pull)
+    else
+        echo "\n⚠️ 找不到路徑: $repo_path"
+    fi
+}
+
+update_repo "$HOME/Repo/superpowers"
+update_repo "$HOME/Repo/planning-with-files"
+
+# 3. NPM 全域更新
+if command -v npm &> /dev/null; then
+    echo "\n🌐 更新 NPM 全域套件..."
+    npm update -g
+else
+    echo "\n⚠️ 未安裝 NPM，跳過。"
+fi
+
+echo "\n✅ 全部更新完成！"

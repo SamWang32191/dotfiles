@@ -23,3 +23,4 @@ alias omo-switch='~/Repo/switch-omo-config-json/switch-omo-config.sh'
 alias python='python3'
 alias start_jdtls='/Users/samwang/dotfiles/bin/start_jdtls.sh'
 
+alias up="$HOME/dotfiles/bin/up"
