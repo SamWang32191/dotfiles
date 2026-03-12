@@ -83,7 +83,11 @@ declare -a LINK_MAPPINGS=(
   "config/macmon.json|$HOME/.config/macmon.json"
   "config/ghostty/config|$HOME/.config/ghostty/config"
   "config/codex/config.toml|$HOME/.codex/config.toml"
+  "config/gemini/GEMINI.md|$HOME/.gemini/GEMINI.md"
   "config/opencode/opencode.json|$HOME/.config/opencode/opencode.json"
+  "config/opencode/oh-my-opencode-slim.json|$HOME/.config/opencode/oh-my-opencode-slim.json"
+  "config/opencode/agents|$HOME/.config/opencode/agents"
+  "config/opencode/prompts|$HOME/.config/opencode/prompts"
   "bin/start_jdtls.sh|$HOME/.bin/start_jdtls.sh"
 )
 
