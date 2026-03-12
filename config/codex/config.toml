@@ -28,6 +28,7 @@ status_line = [
     "weekly-limit",
     "context-used",
 ]
+theme = "github"
 
 [projects."/Users/samwang/dotfiles"]
 trust_level = "trusted"
@@ -57,4 +58,16 @@ trust_level = "trusted"
 trust_level = "trusted"
 
 [projects."/Users/samwang/Repo/oh-my-opencode-slim"]
+trust_level = "trusted"
+
+[projects."/Users/samwang/.agents/skills"]
+trust_level = "trusted"
+
+[projects."/Users/samwang/.config/opencode/plugins"]
+trust_level = "trusted"
+
+[projects."/Users/samwang/.gemini/extensions"]
+trust_level = "trusted"
+
+[projects."/Users/samwang/Repo/OpenSpec"]
 trust_level = "trusted"

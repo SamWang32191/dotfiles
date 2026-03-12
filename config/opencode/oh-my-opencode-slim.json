@@ -72,6 +72,7 @@
       "oracle": {
         "model": "minimax-coding-plan/MiniMax-M2.5",
         "skills": [
+          "fork-sync-workflow",
           "brainstorming",
           "systematic-debugging",
           "simplify",

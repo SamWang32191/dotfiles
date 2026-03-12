@@ -1,6 +1,6 @@
 {
   "$schema": "https://opencode.ai/config.json",
-  "plugin": ["oh-my-opencode-slim@latest"],
+  "plugin": ["/Users/samwang/tmp/oh-my-opencode-slim-test"],
   "small_model": "opencode/mimo-v2-flash-free",
   "agent": {
     "explore": {
