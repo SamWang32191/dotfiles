@@ -1,0 +1,2 @@
+# My functions
+cotn() { touch "$1" && cot "$1"; }

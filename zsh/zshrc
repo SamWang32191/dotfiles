@@ -16,6 +16,7 @@ source "$HOME/dotfiles/zsh/path.zsh"
 source "$HOME/dotfiles/zsh/omz.zsh"
 
 source ~/.myalias
+source ~/.myfunctions
 source ~/.myenv
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.

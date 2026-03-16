@@ -73,6 +73,7 @@ declare -a LINK_MAPPINGS=(
   "zsh/omz.zsh|$HOME/.zsh/omz.zsh"
   "zsh/tools.zsh|$HOME/.zsh/tools.zsh"
   "shell/myalias|$HOME/.myalias"
+  "shell/myfunctions|$HOME/.myfunctions"
   "shell/myenv.example|$HOME/.myenv.example"
   "git/gitconfig|$HOME/.gitconfig"
   "git/gitignore_global|$HOME/.gitignore_global"
