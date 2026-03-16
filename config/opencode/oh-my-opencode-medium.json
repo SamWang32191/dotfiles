@@ -80,8 +80,7 @@
     },
     "minimax": {
       "orchestrator": {
-        "model": "openai/gpt-5.4",
-        "variant": "medium",
+        "model": "minimax-coding-plan/MiniMax-M2.5",
         "skills": [
           "*"
         ],
@@ -90,8 +89,7 @@
         ]
       },
       "oracle": {
-        "model": "openai/gpt-5.3-codex",
-        "variant": "high",
+        "model": "minimax-coding-plan/MiniMax-M2.5",
         "skills": [
           "fork-sync-workflow",
           "brainstorming",

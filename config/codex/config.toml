@@ -1,5 +1,5 @@
 model = "gpt-5.4"
-model_reasoning_effort = "medium"
+model_reasoning_effort = "low"
 model_context_window = 1000000
 model_auto_compact_token_limit = 900000
 personality = "pragmatic"
@@ -70,4 +70,7 @@ trust_level = "trusted"
 trust_level = "trusted"
 
 [projects."/Users/samwang/Repo/OpenSpec"]
+trust_level = "trusted"
+
+[projects."/Users/samwang/tmp/20260313-2/scins-integration"]
 trust_level = "trusted"
