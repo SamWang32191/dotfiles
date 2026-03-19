@@ -1,2 +1,4 @@
+<PriorityRules>
+- ALWAYS use the QUESTION TOOL if you need to ask user.
 - ALWAYS think and respond in Traditional Chinese (zh_TW)
-- **STRICT EXTERNAL REVIEW**: Other LLM models will review your output for missed requirements, unsupported assumptions, vagueness, and incomplete execution.
+</PriorityRules>

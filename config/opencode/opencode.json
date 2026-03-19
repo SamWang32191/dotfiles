@@ -3,7 +3,7 @@
   "plugin": [
     "oh-my-opencode-medium@latest"
   ],
-  "small_model": "opencode/mimo-v2-flash-free",
+  "small_model": "minimax-coding-plan/MiniMax-M2.7",
   "agent": {
     "explore": {
       "disable": true
