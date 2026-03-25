@@ -1,5 +1,5 @@
 #!/bin/sh
-DIR="$HOME/.local/share/opencode/bin/jdtls"
+DIR="$HOME/.cache/opencode/bin/jdtls"
 LAUNCHER=$(ls "$DIR/plugins/org.eclipse.equinox.launcher_"*.jar)
 LOMBOK_JAR="$HOME/.lombok/lombok.jar"
 WORKSPACE_BASE="$HOME/.cache/jdtls"
