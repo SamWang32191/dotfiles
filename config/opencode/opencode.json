@@ -6,21 +6,28 @@
   ],
   "small_model": "minimax-coding-plan/MiniMax-M2.7",
   "agent": {
+    "build": {
+      "permission": {
+        "skill": {
+          "*": "deny"
+        }
+      }
+    },
     "explore": {
       "disable": true
     },
     "general": {
       "disable": true
-    }
-  },
-  "lsp": {
-    "jdtls": {
-      "command": [
-        "/Users/samwang/dotfiles/bin/start_jdtls.sh"
-      ],
-      "extensions": [
-        ".java"
-      ]
+    },
+    "lsp": {
+      "jdtls": {
+        "command": [
+          "/Users/samwang/dotfiles/bin/start_jdtls.sh"
+        ],
+        "extensions": [
+          ".java"
+        ]
+      }
     }
   }
 }

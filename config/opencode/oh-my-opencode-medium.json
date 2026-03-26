@@ -123,5 +123,6 @@
   "balanceProviderUsage": false,
   "fallback": {
     "enabled": false
-  }
+  },
+  "hashline_edit": false
 }

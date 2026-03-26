@@ -1,5 +1,5 @@
 model = "gpt-5.4"
-model_reasoning_effort = "medium"
+model_reasoning_effort = "high"
 personality = "pragmatic"
 default_mode_request_user_input = true
 plan_mode_reasoning_effort = "high"
@@ -106,4 +106,22 @@ trust_level = "trusted"
 trust_level = "trusted"
 
 [projects."/Users/samwang/tmp/workspace/my-loop-plugin"]
+trust_level = "trusted"
+
+[projects."/Users/samwang/tmp/powerrangers"]
+trust_level = "trusted"
+
+[projects."/Users/samwang/tmp/workspace"]
+trust_level = "trusted"
+
+[projects."/Users/samwang/tmp/workspace/just-loop"]
+trust_level = "trusted"
+
+[projects."/Users/samwang/Softleader/kapok"]
+trust_level = "trusted"
+
+[projects."/Users/samwang/tmp/cicd"]
+trust_level = "trusted"
+
+[projects."/Users/samwang/Repo/opencode"]
 trust_level = "trusted"
