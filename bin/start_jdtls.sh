@@ -10,40 +10,7 @@ else
 fi
 WORKSPACE="$WORKSPACE_BASE/$HASH"
 
-# Detect OS and architecture
-OS_TYPE="$(uname -s)"
-ARCH_TYPE="$(uname -m)"
-
-case "$OS_TYPE" in
-  Darwin)
-    if [ "$ARCH_TYPE" = "arm64" ] && [ -d "$DIR/config_mac_arm" ]; then
-      CONFIG_BASE="$DIR/config_mac_arm"
-    else
-      CONFIG_BASE="$DIR/config_mac"
-    fi
-    ;;
-  Linux)
-    if [ "$ARCH_TYPE" = "aarch64" ] && [ -d "$DIR/config_linux_arm" ]; then
-      CONFIG_BASE="$DIR/config_linux_arm"
-    else
-      CONFIG_BASE="$DIR/config_linux"
-    fi
-    ;;
-  *)
-    CONFIG_BASE="$DIR/config_linux"
-    ;;
-esac
-
-# Prefer a writable configuration directory to avoid JDTLS warnings.
-if [ -w "$CONFIG_BASE" ]; then
-  CONFIG="$CONFIG_BASE"
-else
-  CONFIG="$HOME/.cache/jdtls/$(basename "$CONFIG_BASE")"
-  if [ ! -d "$CONFIG" ] || [ ! -f "$CONFIG/config.ini" ]; then
-    mkdir -p "$CONFIG"
-    cp -R "$CONFIG_BASE"/. "$CONFIG"/
-  fi
-fi
+CONFIG="$DIR/config_mac_arm"
 
 SDKMAN_JAVA_DIR="${SDKMAN_CANDIDATES_DIR:-${SDKMAN_DIR:-$HOME/.sdkman}/candidates}/java"
 JDTLS_PINNED_JAVA_HOME="${JDTLS_JAVA_HOME:-$SDKMAN_JAVA_DIR/21.0.9-tem}"
