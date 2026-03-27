@@ -24,7 +24,15 @@ update_repo() {
 update_repo "$HOME/Repo/superpowers"
 update_repo "$HOME/Repo/planning-with-files"
 
-# 3. NPM 全域更新
+# 3. 更新全域 Skills
+if command -v npx &> /dev/null; then
+    echo "\n🛠️ 更新全域 Skills..."
+    npx -y skills update -g
+else
+    echo "\n⚠️ 未安裝 npx，跳過。"
+fi
+
+# 4. NPM 全域更新
 if command -v npm &> /dev/null; then
     echo "\n🌐 更新 NPM 全域套件..."
     npm update -g
