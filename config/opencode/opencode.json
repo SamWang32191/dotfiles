@@ -4,7 +4,7 @@
     "oh-my-opencode-medium@latest",
     "@w32191/just-loop@latest"
   ],
-  "small_model": "minimax-coding-plan/MiniMax-M2.7",
+  "small_model": "opencode/nemotron-3-super-free",
   "agent": {
     "build": {
       "permission": {

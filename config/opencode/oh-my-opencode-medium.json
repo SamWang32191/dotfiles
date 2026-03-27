@@ -1,6 +1,6 @@
 {
   "$schema": "https://unpkg.com/oh-my-opencode-medium@latest/oh-my-opencode-medium.schema.json",
-  "preset": "minimax",
+  "preset": "openai",
   "presets": {
     "openai": {
       "orchestrator": {
