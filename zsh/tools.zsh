@@ -32,6 +32,14 @@ sdk() {
   [[ -s "$SDKMAN_DIR/bin/sdkman-init.sh" ]] && source "$SDKMAN_DIR/bin/sdkman-init.sh"
   sdk "$@"
 }
+# Eagerly load SDKMAN completion so aliases like `sdj` get TAB completion
+# without triggering the lazy-load first.
+export SDKMAN_CANDIDATES_DIR="${SDKMAN_DIR}/candidates"
+if [[ -r "$SDKMAN_DIR/contrib/completion/bash/sdk" ]]; then
+  autoload -U bashcompinit
+  bashcompinit
+  source "$SDKMAN_DIR/contrib/completion/bash/sdk"
+fi
 
 # bun completions
 [ -s "$HOME/.bun/_bun" ] && source "$HOME/.bun/_bun"
