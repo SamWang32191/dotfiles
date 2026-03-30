@@ -3,7 +3,7 @@
 # Use custom format
 format = '''
 [┌─────────────────────>](bold green)
-[│](bold green)$directory$git_branch$git_status$kubernetes $java$nodejs$golang$package$memory_usage$time
+[│](bold green)$directory$git_branch$git_commit$git_status$kubernetes $java$nodejs$golang$package$fill$time
 [└─>](bold green) '''
 
 # Wait 10 milliseconds for starship to check files under the current directory.
@@ -12,10 +12,8 @@ scan_timeout = 10
 # Disable the blank line at the start of the prompt
 add_newline = false
 
-[memory_usage]
-disabled = false
-format = '$symbol[${ram}( | ${ram_pct})]($style) '
-threshold = 75
+[fill]
+symbol = ' '
 
 [gcloud]
 disabled = true
