@@ -8,3 +8,4 @@ source ~/.myfunctions
 source ~/.myenv
 
 source "$HOME/dotfiles/zsh/tools.zsh"
+eval "$(starship init zsh)"
