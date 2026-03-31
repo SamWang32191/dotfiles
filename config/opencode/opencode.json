@@ -5,7 +5,6 @@
     "@w32191/just-loop@latest",
     "@franlol/opencode-md-table-formatter@latest"
   ],
-  "small_model": "opencode/nemotron-3-super-free",
   "agent": {
     "build": {
       "permission": {

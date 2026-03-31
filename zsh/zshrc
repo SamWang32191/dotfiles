@@ -1,11 +1,7 @@
-fpath=("/Users/samwang/.oh-my-zsh/custom/completions" $fpath)
-
+source "$HOME/.myalias"
+source "$HOME/.myfunctions"
+source "$HOME/.myenv"
 source "$HOME/dotfiles/zsh/path.zsh"
 source "$HOME/dotfiles/zsh/omz.zsh"
-
-source ~/.myalias
-source ~/.myfunctions
-source ~/.myenv
-
 source "$HOME/dotfiles/zsh/tools.zsh"
 eval "$(starship init zsh)"
