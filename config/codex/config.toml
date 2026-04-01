@@ -1,5 +1,5 @@
 model = "gpt-5.4"
-model_reasoning_effort = "high"
+model_reasoning_effort = "medium"
 personality = "pragmatic"
 default_mode_request_user_input = true
 plan_mode_reasoning_effort = "high"
@@ -124,4 +124,7 @@ trust_level = "trusted"
 trust_level = "trusted"
 
 [projects."/Users/samwang/Repo/opencode"]
+trust_level = "trusted"
+
+[projects."/Users/samwang/Softleader/Iris/Backend/iris-auth"]
 trust_level = "trusted"

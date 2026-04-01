@@ -8,7 +8,7 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(aliases kubectl zsh-completions zsh-autosuggestions git z brew)
+plugins=(aliases kubectl zsh-completions git z brew)
 
 fpath+=${ZSH_CUSTOM:-${ZSH:-~/.oh-my-zsh}/custom}/plugins/zsh-completions/src
 # Added by Docker Desktop to enable Docker CLI completions.
