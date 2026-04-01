@@ -131,3 +131,6 @@ trust_level = "trusted"
 
 [projects."/Users/samwang/tmp/cicd-iris/uat-jenkins-pipeline"]
 trust_level = "trusted"
+
+[projects."/Users/samwang/Repo/jdk-java-helper"]
+trust_level = "trusted"

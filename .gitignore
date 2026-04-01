@@ -24,3 +24,5 @@ config/configstore/
 
 # Local-only config (do not track)
 config/opencode/oh-my-opencode.json
+
+.idea/

@@ -34,3 +34,7 @@ export PATH="${NPM_GLOBAL}:$PATH"
 # Local bin
 export LOCAL_INSTALL_BIN_PATH="${HOME}/.local/bin"
 export PATH="${LOCAL_INSTALL_BIN_PATH}:$PATH"
+
+# JetBrains Toolbox
+export JETBRAINS_TOOL_PATH="${HOME}/Library/Application Support/JetBrains/Toolbox/scripts"
+export PATH="${JETBRAINS_TOOL_PATH}:$PATH"
