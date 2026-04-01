@@ -1,5 +1,5 @@
-model = "gpt-5.4"
-model_reasoning_effort = "medium"
+model = "gpt-5.3-codex-spark"
+model_reasoning_effort = "high"
 personality = "pragmatic"
 default_mode_request_user_input = true
 plan_mode_reasoning_effort = "high"
@@ -127,4 +127,7 @@ trust_level = "trusted"
 trust_level = "trusted"
 
 [projects."/Users/samwang/Softleader/Iris/Backend/iris-auth"]
+trust_level = "trusted"
+
+[projects."/Users/samwang/tmp/cicd-iris/uat-jenkins-pipeline"]
 trust_level = "trusted"
