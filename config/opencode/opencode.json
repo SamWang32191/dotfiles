@@ -3,6 +3,8 @@
   "plugin": [
     "oh-my-opencode-slim@latest",
     "@franlol/opencode-md-table-formatter@latest",
+    "opencode-command-inject@latest",
+    "@w32191/hashline-plugin@latest",
     "@w32191/just-loop@latest",
     "todo-continuation-enforcer@latest"
   ],
