@@ -5,7 +5,6 @@
     "@franlol/opencode-md-table-formatter@latest",
     "@w32191/just-loop@latest",
     "@w32191/hashline-plugin@latest",
-    "todo-continuation-enforcer@latest",
     "opencode-command-inject@latest"
   ],
   "model": "openai/gpt-5.4",
