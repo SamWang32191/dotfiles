@@ -14,6 +14,7 @@
     "build": {
       "permission": {
         "skill": {
+          "git-commit-co-author": "allow",
           "*": "deny"
         }
       }
