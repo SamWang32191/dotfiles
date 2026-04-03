@@ -37,7 +37,7 @@
         "mcps": []
       },
       "designer": {
-        "model": "openai/gpt-5.4-mini",
+        "model": "openai/gpt-5.4",
         "variant": "medium",
         "skills": [
           "agent-browser"
