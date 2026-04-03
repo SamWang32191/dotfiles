@@ -1,7 +1,6 @@
 ---
 description: Git commit, push and open a pull request
 agent: build
-model: opencode/minimax-m2.5-free
 subtask: true
 ---
 

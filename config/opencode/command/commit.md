@@ -1,7 +1,6 @@
 ---
 description: Git commit
 agent: build
-model: opencode/minimax-m2.5-free
 subtask: true
 ---
 
