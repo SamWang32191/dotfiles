@@ -1,11 +1,14 @@
 ---
 description: Git commit, push and open a pull request
 agent: build
-model: opencode/minimax-m2.5-free
+model: openai/gpt-5.4-mini
 subtask: true
 ---
 
 commit, push and open a pull request
+
+If the `git-commit-co-author` skill is available, you MUST use it to determine
+and append the appropriate Co-authored-by trailer(s) to the commit message.
 
 make sure it uses the conventional commit format
 
@@ -16,6 +19,9 @@ do not do generic messages like "improved agent experience" be very specific
 about what user facing changes were made
 
 if there are conflicts DO NOT FIX THEM. notify me and I will fix them
+
+if the `git-commit-co-author` skill is available, you MUST use it to determine
+and append the appropriate Co-authored-by trailer(s) to the commit message.
 
 ## GIT DIFF
 
