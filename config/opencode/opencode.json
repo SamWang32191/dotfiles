@@ -4,8 +4,7 @@
     "oh-my-opencode-slim@latest",
     "@franlol/opencode-md-table-formatter@latest",
     "opencode-command-inject@latest",
-    "@w32191/just-loop@latest",
-    "todo-continuation-enforcer@latest"
+    "@w32191/just-loop@latest"
   ],
   "model": "openai/gpt-5.4",
   "small_model": "openai/gpt-5.3-codex-spark",

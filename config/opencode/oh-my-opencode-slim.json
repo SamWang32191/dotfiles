@@ -103,5 +103,8 @@
         "mcps": []
       }
     }
+  },
+  "fallback": {
+    "enabled": false
   }
 }
