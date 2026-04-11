@@ -1,8 +1,5 @@
 ---
 description: Git commit and push
-agent: build
-model: openai/gpt-5.4-mini
-subtask: true
 ---
 
 commit and push

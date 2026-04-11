@@ -1,8 +1,5 @@
 ---
 description: Git commit, push and open a pull request
-agent: build
-model: openai/gpt-5.4-mini
-subtask: true
 ---
 
 commit, push and open a pull request
