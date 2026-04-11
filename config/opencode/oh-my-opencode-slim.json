@@ -46,8 +46,8 @@
         "mcps": []
       },
       "fixer": {
-        "model": "openai/gpt-5.4-mini",
-        "variant": "low",
+        "model": "openai/gpt-5.3-codex",
+        "variant": "high",
         "skills": [],
         "mcps": []
       }
