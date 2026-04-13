@@ -2,9 +2,9 @@
   "$schema": "https://opencode.ai/config.json",
   "plugin": [
     "oh-my-opencode-slim@latest",
+    "@w32191/just-loop@latest",
     "@franlol/opencode-md-table-formatter@latest",
-    "opencode-command-inject@latest",
-    "@w32191/just-loop@latest"
+    "opencode-command-inject@latest"
   ],
   "model": "openai/gpt-5.4",
   "small_model": "openai/gpt-5.3-codex-spark",

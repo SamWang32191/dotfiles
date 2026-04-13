@@ -22,7 +22,6 @@ update_repo() {
 }
 
 update_repo "$HOME/Repo/superpowers"
-update_repo "$HOME/Repo/planning-with-files"
 
 # 3. 更新全域 Skills
 if command -v npx &> /dev/null; then
