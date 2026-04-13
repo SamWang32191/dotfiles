@@ -24,7 +24,7 @@
       },
       "librarian": {
         "model": "openai/gpt-5.4-mini",
-        "variant": "low",
+        "variant": "medium",
         "skills": [],
         "mcps": [
           "websearch",
@@ -33,7 +33,7 @@
       },
       "explorer": {
         "model": "openai/gpt-5.4-mini",
-        "variant": "low",
+        "variant": "medium",
         "skills": [],
         "mcps": []
       },
@@ -75,7 +75,7 @@
       },
       "librarian": {
         "model": "openai/gpt-5.4-mini",
-        "variant": "low",
+        "variant": "medium",
         "skills": [],
         "mcps": [
           "websearch",
@@ -84,7 +84,7 @@
       },
       "explorer": {
         "model": "openai/gpt-5.4-mini",
-        "variant": "low",
+        "variant": "medium",
         "skills": [],
         "mcps": []
       },
