@@ -1,11 +1,13 @@
-model = "gpt-5.3-codex-spark"
-model_reasoning_effort = "medium"
+model = "gpt-5.4"
+model_reasoning_effort = "xhigh"
 personality = "pragmatic"
 default_mode_request_user_input = true
 plan_mode_reasoning_effort = "high"
 sandbox_mode = "workspace-write"
 approvals_reviewer = "user"
 approval_policy = "on-request"
+model_context_window = 1000000
+model_auto_compact_token_limit = 900000
 
 [sandbox_workspace_write]
 network_access = true
@@ -154,6 +156,9 @@ trust_level = "trusted"
 trust_level = "trusted"
 
 [projects."/Users/samwang/Softleader/scins-asi-cie"]
+trust_level = "trusted"
+
+[projects."/Users/samwang/Softleader/kapok-2"]
 trust_level = "trusted"
 
 [plugins."slack@openai-curated"]
