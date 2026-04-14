@@ -25,14 +25,7 @@ guardian_approval = true
 hide_full_access_warning = true
 
 [tui]
-status_line = [
-    "project-root",
-    "git-branch",
-    "model-with-reasoning",
-    "five-hour-limit",
-    "weekly-limit",
-    "context-used",
-]
+status_line = ["current-dir", "git-branch", "model-with-reasoning", "five-hour-limit", "weekly-limit", "context-window-size"]
 theme = "two-dark"
 
 [projects."/Users/samwang/dotfiles"]
