@@ -4,7 +4,7 @@ personality = "pragmatic"
 default_mode_request_user_input = true
 plan_mode_reasoning_effort = "high"
 sandbox_mode = "workspace-write"
-approvals_reviewer = "user"
+approvals_reviewer = "guardian_subagent"
 approval_policy = "on-request"
 model_context_window = 1000000
 model_auto_compact_token_limit = 900000
@@ -20,13 +20,14 @@ multi_agent = true
 prevent_idle_sleep = true
 js_repl = true
 guardian_approval = true
+image_detail_original = true
 
 [notice]
 hide_full_access_warning = true
 
 [tui]
 status_line = ["current-dir", "git-branch", "model-with-reasoning", "five-hour-limit", "weekly-limit", "context-window-size"]
-theme = "two-dark"
+theme = "one-half-dark"
 
 [projects."/Users/samwang/dotfiles"]
 trust_level = "trusted"
@@ -152,6 +153,15 @@ trust_level = "trusted"
 trust_level = "trusted"
 
 [projects."/Users/samwang/Softleader/kapok-2"]
+trust_level = "trusted"
+
+[projects."/Users/samwang/Softleader/Iris"]
+trust_level = "trusted"
+
+[projects."/Users/samwang/Softleader/tmp/kapok-keycloak"]
+trust_level = "trusted"
+
+[projects."/Users/samwang/Softleader/TransGlobe/kapok-wiki"]
 trust_level = "trusted"
 
 [plugins."slack@openai-curated"]
