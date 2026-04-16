@@ -124,7 +124,7 @@
         "mcps": []
       },
       "librarian": {
-        "model": "openai/gpt-5.4-mini-fast",
+        "model": "openai/gpt-5.4-fast",
         "variant": "medium",
         "skills": [],
         "mcps": [
@@ -133,7 +133,7 @@
         ]
       },
       "explorer": {
-        "model": "openai/gpt-5.4-mini-fast",
+        "model": "openai/gpt-5.4-fast",
         "variant": "medium",
         "skills": [],
         "mcps": []
@@ -147,7 +147,7 @@
         "mcps": []
       },
       "fixer": {
-        "model": "openai/gpt-5.4-mini-fast",
+        "model": "openai/gpt-5.4-fast",
         "variant": "high",
         "skills": [],
         "mcps": []
