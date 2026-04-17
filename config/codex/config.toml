@@ -1,5 +1,5 @@
 model = "gpt-5.4"
-model_reasoning_effort = "medium"
+model_reasoning_effort = "high"
 personality = "pragmatic"
 default_mode_request_user_input = true
 plan_mode_reasoning_effort = "high"
@@ -9,6 +9,8 @@ approval_policy = "on-request"
 model_context_window = 1000000
 model_auto_compact_token_limit = 900000
 service_tier = "fast"
+
+notify = ["/Users/samwang/.codex/plugins/cache/openai-bundled/computer-use/1.0.750/Codex Computer Use.app/Contents/SharedSupport/SkyComputerUseClient.app/Contents/MacOS/SkyComputerUseClient", "turn-ended"]
 
 [sandbox_workspace_write]
 network_access = true
@@ -22,6 +24,7 @@ prevent_idle_sleep = true
 js_repl = true
 guardian_approval = true
 image_detail_original = true
+memories = true
 
 [notice]
 hide_full_access_warning = true
@@ -62,7 +65,19 @@ trust_level = "trusted"
 [projects."/Users/samwang/code/github.com/softleader/machine-manager"]
 trust_level = "trusted"
 
+[projects."/Users/samwang/tmp/jenkins-git-sync"]
+trust_level = "trusted"
+
 [marketplaces.openai-bundled]
-last_updated = "2026-04-17T06:03:24Z"
+last_updated = "2026-04-17T15:18:21Z"
 source_type = "local"
 source = "/Users/samwang/.codex/.tmp/bundled-marketplaces/openai-bundled"
+
+[memories]
+no_memories_if_mcp_or_web_search = true
+
+[plugins."computer-use@openai-bundled"]
+enabled = true
+
+[plugins."github@openai-curated"]
+enabled = true
