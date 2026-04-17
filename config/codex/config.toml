@@ -1,5 +1,5 @@
 model = "gpt-5.4"
-model_reasoning_effort = "xhigh"
+model_reasoning_effort = "medium"
 personality = "pragmatic"
 default_mode_request_user_input = true
 plan_mode_reasoning_effort = "high"
@@ -40,3 +40,29 @@ theme = "one-half-dark"
 
 [projects."/Users/samwang/tmp/worker"]
 trust_level = "trusted"
+
+[projects."/Users/samwang/Softleader/TransGlobe/kapok-policy"]
+trust_level = "trusted"
+
+[projects."/Users/samwang/code/github.com/SamWang32191/opencode-roast-tone-plugin"]
+trust_level = "trusted"
+
+[projects."/Users/samwang/Softleader/agent-skills"]
+trust_level = "trusted"
+
+[projects."/Users/samwang/Softleader/fglife/new/fglife-admin-ui"]
+trust_level = "trusted"
+
+[projects."/Users/samwang/Library/Caches/agentdock/repos"]
+trust_level = "trusted"
+
+[projects."/Users/samwang/Library/Caches/agentdock/repos/worktrees/triage-repo-1292893834"]
+trust_level = "trusted"
+
+[projects."/Users/samwang/code/github.com/softleader/machine-manager"]
+trust_level = "trusted"
+
+[marketplaces.openai-bundled]
+last_updated = "2026-04-17T06:03:24Z"
+source_type = "local"
+source = "/Users/samwang/.codex/.tmp/bundled-marketplaces/openai-bundled"

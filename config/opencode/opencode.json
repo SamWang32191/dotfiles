@@ -4,7 +4,8 @@
     "oh-my-opencode-slim@0.9.12",
     "@w32191/just-loop@latest",
     "@franlol/opencode-md-table-formatter@latest",
-    "opencode-command-inject@latest"
+    "opencode-command-inject@latest",
+    "opencode-roast-tone-plugin@latest"
   ],
   "model": "openai/gpt-5.4",
   "small_model": "openai/gpt-5.3-codex-spark",
