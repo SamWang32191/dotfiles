@@ -14,7 +14,7 @@
         }
       }
     ],
-    "opencode-roast-tone-plugin@latest",
+    "opencode-roast-tone-plugin",
     "opencode-priority-rule-plugin"
   ]
 }
