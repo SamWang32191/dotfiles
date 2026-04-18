@@ -41,6 +41,7 @@
     "external_directory": {
       "*": "ask",
       "~/code/github.com/**": "allow",
+      "~/.agents/skills/**": "allow",
       "/tmp/**": "allow",
       "~/tmp/**": "allow"
     },

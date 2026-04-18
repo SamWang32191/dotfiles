@@ -15,10 +15,7 @@ WHAT was done.
 do not do generic messages like "improved agent experience" be very specific
 about what user facing changes were made
 
-if there are conflicts DO NOT FIX THEM. notify me and I will fix them
-
-if the `git-commit-co-author` skill is available, you MUST use it to determine
-and append the appropriate Co-authored-by trailer(s) to the commit message.
+if there are conflicts DO NOT FIX THEM. notify me and I will fix them.
 
 ## GIT DIFF
 
