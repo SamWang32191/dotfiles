@@ -25,7 +25,7 @@
     },
     "general": {
       "disable": true
-    },
+    }
   },
   "lsp": {
     "jdtls": {
@@ -35,6 +35,31 @@
       "extensions": [
         ".java"
       ]
+    }
+  },
+  "permission": {
+    "external_directory": {
+      "*": "ask",
+      "~/code/github.com/**": "allow",
+      "/tmp/**": "allow",
+      "~/tmp/**": "allow"
+    },
+    "bash": {
+      "git reset --hard *": "deny",
+      "git clean -f*": "deny",
+      "git branch -D *": "deny",
+      "git checkout .": "deny",
+      "git restore .": "deny",
+      "gh repo delete *": "deny",
+      "gh repo archive *": "deny",
+      "gh pr close *": "deny",
+      "gh pr merge *": "deny",
+      "gh issue close *": "deny",
+      "gh issue delete *": "deny",
+      "gh release delete *": "deny",
+      "gh api * -X DELETE": "deny",
+      "gh api * --method DELETE": "deny",
+      "git push *": "deny"
     }
   }
 }
