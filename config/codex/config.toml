@@ -1,5 +1,5 @@
 model = "gpt-5.4"
-model_reasoning_effort = "xhigh"
+model_reasoning_effort = "high"
 personality = "pragmatic"
 default_mode_request_user_input = true
 plan_mode_reasoning_effort = "high"
@@ -10,7 +10,10 @@ model_context_window = 1000000
 model_auto_compact_token_limit = 900000
 service_tier = "fast"
 
-notify = ["/Users/samwang/.codex/plugins/cache/openai-bundled/computer-use/1.0.750/Codex Computer Use.app/Contents/SharedSupport/SkyComputerUseClient.app/Contents/MacOS/SkyComputerUseClient", "turn-ended"]
+notify = [
+    "/Users/samwang/.codex/plugins/cache/openai-bundled/computer-use/1.0.750/Codex Computer Use.app/Contents/SharedSupport/SkyComputerUseClient.app/Contents/MacOS/SkyComputerUseClient",
+    "turn-ended",
+]
 
 [sandbox_workspace_write]
 network_access = true
@@ -40,48 +43,6 @@ status_line = [
     "used-tokens",
 ]
 theme = "one-half-dark"
-
-[projects."/Users/samwang/tmp/worker"]
-trust_level = "trusted"
-
-[projects."/Users/samwang/Softleader/TransGlobe/kapok-policy"]
-trust_level = "trusted"
-
-[projects."/Users/samwang/code/github.com/SamWang32191/opencode-roast-tone-plugin"]
-trust_level = "trusted"
-
-[projects."/Users/samwang/Softleader/agent-skills"]
-trust_level = "trusted"
-
-[projects."/Users/samwang/Softleader/fglife/new/fglife-admin-ui"]
-trust_level = "trusted"
-
-[projects."/Users/samwang/Library/Caches/agentdock/repos"]
-trust_level = "trusted"
-
-[projects."/Users/samwang/Library/Caches/agentdock/repos/worktrees/triage-repo-1292893834"]
-trust_level = "trusted"
-
-[projects."/Users/samwang/code/github.com/softleader/machine-manager"]
-trust_level = "trusted"
-
-[projects."/Users/samwang/tmp/jenkins-git-sync"]
-trust_level = "trusted"
-
-[projects."/Users/samwang/code/github.com/SamWang32191/opencode-priority-rule-plugin"]
-trust_level = "trusted"
-
-[projects."/Users/samwang/.config/opencode"]
-trust_level = "trusted"
-
-[projects."/Users/samwang/code/github.com/SamWang32191/gemini-page"]
-trust_level = "trusted"
-
-[projects."/Users/samwang/code/github.com/softleader/agent-skills"]
-trust_level = "trusted"
-
-[projects."/Users/samwang/.ssh"]
-trust_level = "trusted"
 
 [marketplaces.openai-bundled]
 last_updated = "2026-04-18T10:18:11Z"
