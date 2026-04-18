@@ -1,7 +1,6 @@
 model = "gpt-5.4"
-model_reasoning_effort = "high"
+model_reasoning_effort = "xhigh"
 personality = "pragmatic"
-default_mode_request_user_input = true
 plan_mode_reasoning_effort = "high"
 sandbox_mode = "workspace-write"
 approvals_reviewer = "guardian_subagent"
@@ -19,6 +18,7 @@ notify = [
 network_access = true
 
 [features]
+default_mode_request_user_input = true
 multi_agent_v2 = true
 prevent_idle_sleep = true
 js_repl = true
@@ -29,8 +29,8 @@ memories = true
 hide_full_access_warning = true
 
 [agents]
-max_threads = 12
-max_depth = 1
+max_threads = 10
+max_depth = 2
 job_max_runtime_seconds = 3600
 
 [agents.worker]
@@ -117,6 +117,9 @@ trust_level = "trusted"
 trust_level = "trusted"
 
 [projects."/Users/samwang/code/github.com/openai/codex"]
+trust_level = "trusted"
+
+[projects."/Users/samwang/code/github.com/SamWang32191/workspace-manager-2"]
 trust_level = "trusted"
 
 [[skills.config]]
