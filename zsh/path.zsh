@@ -3,6 +3,10 @@
 export BREW_PATH=/opt/homebrew
 export PATH="${BREW_PATH}/bin:$PATH"
 
+# make
+export MAKE_PATH="${BREW_PATH}/opt/make/libexec/gnubin"
+export PATH="${MAKE_PATH}:$PATH"
+
 # maven
 export MAVEN_HOME="${HOME}/DevTools/apache-maven-3.9.12"
 export PATH="${MAVEN_HOME}/bin:$PATH"
