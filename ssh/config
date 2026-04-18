@@ -2,10 +2,6 @@ Host ocp-uat.cki.com.tw
   HostName ocp-uat.cki.com.tw
   User sluser
 
-Host 192.168.1.33
-  User root
-  IdentityFile ~/.ssh/id_rsa_sl_server
-
 # 預設Bitbucket，使用三合一金鑰
 Host bitbucket.org
   HostName bitbucket.org
