@@ -1,5 +1,5 @@
 model = "gpt-5.4"
-model_reasoning_effort = "medium"
+model_reasoning_effort = "xhigh"
 personality = "pragmatic"
 default_mode_request_user_input = true
 plan_mode_reasoning_effort = "high"
@@ -77,8 +77,11 @@ trust_level = "trusted"
 [projects."/Users/samwang/code/github.com/SamWang32191/gemini-page"]
 trust_level = "trusted"
 
+[projects."/Users/samwang/code/github.com/softleader/agent-skills"]
+trust_level = "trusted"
+
 [marketplaces.openai-bundled]
-last_updated = "2026-04-18T06:47:22Z"
+last_updated = "2026-04-18T07:37:14Z"
 source_type = "local"
 source = "/Users/samwang/.codex/.tmp/bundled-marketplaces/openai-bundled"
 
