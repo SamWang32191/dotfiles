@@ -10,20 +10,8 @@ else
     echo "\n⚠️ 未安裝 Homebrew，跳過。"
 fi
 
-# 2. 更新 Skill
-update_repo() {
-    local repo_path=$1
-    if [ -d "$repo_path" ]; then
-        echo "\n🌿 更新Skill: $repo_path"
-        (cd "$repo_path" && git pull)
-    else
-        echo "\n⚠️ 找不到路徑: $repo_path"
-    fi
-}
 
-update_repo "$HOME/Repo/superpowers"
-
-# 3. 更新全域 Skills
+# 2. 更新全域 Skills
 if command -v npx &> /dev/null; then
     echo "\n🛠️ 更新全域 Skills..."
     npx -y skills update -g
@@ -31,7 +19,7 @@ else
     echo "\n⚠️ 未安裝 npx，跳過。"
 fi
 
-# 4. NPM 全域更新
+# 3. NPM 全域更新
 if command -v npm &> /dev/null; then
     echo "\n🌐 更新 NPM 全域套件..."
     npm update -g
@@ -39,6 +27,7 @@ else
     echo "\n⚠️ 未安裝 NPM，跳過。"
 fi
 
+# 4. 清理 OpenCode 快取
 echo "\n🧹 清理 OpenCode 快取..."
 rm -rf "$HOME/.cache/opencode/packages"
 

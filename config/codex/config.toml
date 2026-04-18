@@ -74,8 +74,11 @@ trust_level = "trusted"
 [projects."/Users/samwang/.config/opencode"]
 trust_level = "trusted"
 
+[projects."/Users/samwang/code/github.com/SamWang32191/gemini-page"]
+trust_level = "trusted"
+
 [marketplaces.openai-bundled]
-last_updated = "2026-04-18T05:42:53Z"
+last_updated = "2026-04-18T06:47:22Z"
 source_type = "local"
 source = "/Users/samwang/.codex/.tmp/bundled-marketplaces/openai-bundled"
 
@@ -86,4 +89,7 @@ no_memories_if_mcp_or_web_search = true
 enabled = true
 
 [plugins."github@openai-curated"]
+enabled = true
+
+[plugins."superpowers@openai-curated"]
 enabled = true
