@@ -1,0 +1,20 @@
+{
+  "plugin": [
+    [
+      "oc-plugin-rainbow",
+      {
+        "enabled": true,
+        "fg": true,
+        "bg": true,
+        "speed": 0.008,
+        "turns": 3,
+        "glow": 0.05,
+        "keybinds": {
+          "logo_splash": "ctrl+shift+r"
+        }
+      }
+    ],
+    "opencode-roast-tone-plugin@latest",
+    "opencode-priority-rule-plugin"
+  ]
+}

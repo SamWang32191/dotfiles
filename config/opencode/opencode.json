@@ -5,19 +5,14 @@
     "@w32191/just-loop",
     "@franlol/opencode-md-table-formatter",
     "opencode-command-inject",
-    "opencode-roast-tone-plugin"
+    "opencode-roast-tone-plugin",
+    "opencode-priority-rule-plugin"
   ],
   "model": "openai/gpt-5.4-fast",
   "small_model": "openai/gpt-5.3-codex-spark",
   "agent": {
     "build": {
-      "color": "primary",
-      "permission": {
-        "skill": {
-          "*": "deny",
-          "git-commit-co-author": "allow"
-        }
-      }
+      "color": "primary"
     },
     "explore": {
       "disable": true

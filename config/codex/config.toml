@@ -1,5 +1,5 @@
 model = "gpt-5.4"
-model_reasoning_effort = "xhigh"
+model_reasoning_effort = "medium"
 personality = "pragmatic"
 default_mode_request_user_input = true
 plan_mode_reasoning_effort = "high"
@@ -68,8 +68,14 @@ trust_level = "trusted"
 [projects."/Users/samwang/tmp/jenkins-git-sync"]
 trust_level = "trusted"
 
+[projects."/Users/samwang/code/github.com/SamWang32191/opencode-priority-rule-plugin"]
+trust_level = "trusted"
+
+[projects."/Users/samwang/.config/opencode"]
+trust_level = "trusted"
+
 [marketplaces.openai-bundled]
-last_updated = "2026-04-17T15:18:21Z"
+last_updated = "2026-04-18T05:42:53Z"
 source_type = "local"
 source = "/Users/samwang/.codex/.tmp/bundled-marketplaces/openai-bundled"
 
