@@ -1,3 +1,0 @@
-<PriorityRules>
-- ALWAYS think and respond in Traditional Chinese (zh_TW)
-</PriorityRules>
