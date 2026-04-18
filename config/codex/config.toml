@@ -80,8 +80,11 @@ trust_level = "trusted"
 [projects."/Users/samwang/code/github.com/softleader/agent-skills"]
 trust_level = "trusted"
 
+[projects."/Users/samwang/.ssh"]
+trust_level = "trusted"
+
 [marketplaces.openai-bundled]
-last_updated = "2026-04-18T07:37:14Z"
+last_updated = "2026-04-18T10:18:11Z"
 source_type = "local"
 source = "/Users/samwang/.codex/.tmp/bundled-marketplaces/openai-bundled"
 
