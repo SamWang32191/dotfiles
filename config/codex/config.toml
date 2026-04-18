@@ -32,6 +32,24 @@ memories = true
 [notice]
 hide_full_access_warning = true
 
+[agents]
+max_threads = 12
+max_depth = 1
+job_max_runtime_seconds = 3600
+
+[agents.worker]
+model = "gpt-5.3-codex-spark"
+model_reasoning_effort = "high"
+
+[agents.explorer]
+model = "gpt-5.4-mini"
+model_reasoning_effort = "medium"
+
+[agents.reviewer]
+model = "gpt-5.4"
+model_reasoning_effort = "high"
+
+
 [tui]
 status_line = [
     "current-dir",
@@ -39,7 +57,7 @@ status_line = [
     "model-with-reasoning",
     "five-hour-limit",
     "weekly-limit",
-    "context-window-size",
+    "context-used",
 ]
 theme = "one-half-dark"
 
@@ -67,4 +85,7 @@ trust_level = "trusted"
 trust_level = "trusted"
 
 [projects."/Users/samwang/code/github.com/anomalyco/opencode"]
+trust_level = "trusted"
+
+[projects."/Users/samwang/code/github.com/SamWang32191/workspace-manager-copy"]
 trust_level = "trusted"
