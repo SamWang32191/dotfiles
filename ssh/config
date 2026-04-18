@@ -7,6 +7,7 @@ Host bitbucket.org
   HostName bitbucket.org
   User git
   IdentitiesOnly yes
+  IdentityAgent none
   IdentityFile ~/.ssh/id_rsa_bitbucket_eps
 
 # 中信產再保的Bitbucket帳戶
@@ -14,6 +15,7 @@ Host reins.bitbucket.org
   HostName bitbucket.org
   User git
   IdentitiesOnly yes
+  IdentityAgent none
   IdentityFile ~/.ssh/id_rsa_bitbucket_reins
 
 Host *
