@@ -59,7 +59,7 @@
       "gh release delete *": "deny",
       "gh api * -X DELETE": "deny",
       "gh api * --method DELETE": "deny",
-      "git push *": "deny"
+      "git push *": "ask"
     }
   }
 }
