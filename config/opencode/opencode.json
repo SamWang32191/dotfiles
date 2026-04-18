@@ -12,7 +12,13 @@
   "small_model": "openai/gpt-5.3-codex-spark",
   "agent": {
     "build": {
-      "color": "primary"
+      "model": "openai/gpt-5.3-codex-spark",
+      "permission": {
+        "skill": {
+          "*": "deny",
+          "git-commit-co-author": "allow"
+        }
+      }
     },
     "explore": {
       "disable": true
