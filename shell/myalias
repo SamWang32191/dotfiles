@@ -35,4 +35,4 @@ alias python='python3'
 alias rm='~/DevTools/better-rm/better-rm'
 
 # ── Project-specific ─────────────────────────────────────────
-alias omo-switch='~/Repo/switch-omo-config-json/switch-omo-config.sh'
+alias omo-switch='~/code/github.com/SamWang32191/switch-omo-config-json/switch-omo-config.sh'
