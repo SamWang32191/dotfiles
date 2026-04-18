@@ -39,4 +39,7 @@ else
     echo "\n⚠️ 未安裝 NPM，跳過。"
 fi
 
+echo "\n🧹 清理 OpenCode 快取..."
+rm -rf "$HOME/.cache/opencode/packages"
+
 echo "\n✅ 全部更新完成！"

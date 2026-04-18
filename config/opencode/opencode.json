@@ -1,6 +1,7 @@
 {
   "$schema": "https://opencode.ai/config.json",
   "plugin": [
+    "oh-my-opencode-slim",
     "@w32191/just-loop",
     "@franlol/opencode-md-table-formatter",
     "opencode-command-inject",
@@ -9,12 +10,20 @@
   "model": "openai/gpt-5.4-fast",
   "small_model": "openai/gpt-5.3-codex-spark",
   "agent": {
-    "build": {},
+    "build": {
+      "color": "primary",
+      "permission": {
+        "skill": {
+          "*": "deny",
+          "git-commit-co-author": "allow"
+        }
+      }
+    },
     "explore": {
-      "disable": false
+      "disable": true
     },
     "general": {
-      "disable": false
+      "disable": true
     },
   },
   "lsp": {
