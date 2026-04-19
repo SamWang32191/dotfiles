@@ -2,8 +2,8 @@
   "$schema": "https://opencode.ai/config.json",
   "plugin": [
     "oh-my-openagent",
-    "@w32191/just-loop",
     "@franlol/opencode-md-table-formatter",
+    "todo-continuation-enforcer",
     "opencode-roast-tone-plugin",
     "opencode-priority-rule-plugin"
   ],
