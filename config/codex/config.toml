@@ -88,7 +88,7 @@ status_line = [
 theme = "one-half-dark"
 
 [marketplaces.openai-bundled]
-last_updated = "2026-04-18T19:42:24Z"
+last_updated = "2026-04-19T06:43:29Z"
 source_type = "local"
 source = "/Users/samwang/.codex/.tmp/bundled-marketplaces/openai-bundled"
 
@@ -123,6 +123,9 @@ trust_level = "trusted"
 trust_level = "trusted"
 
 [projects."/Users/samwang/code/github.com/obra/superpowers"]
+trust_level = "trusted"
+
+[projects."/Users/samwang/code/github.com/SamWang32191/opencode-roast-tone-plugin"]
 trust_level = "trusted"
 
 [[skills.config]]
