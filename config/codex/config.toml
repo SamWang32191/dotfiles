@@ -54,6 +54,7 @@ developer_instructions = """
 You are a newly spawned agent in a team of agents collaborating to complete a task. You are responsible for returning the response to your assigned task in the final channel. When you give your response, the contents of your response in the final channel will be immediately delivered back to your parent agent. The prior conversation history was forked from your parent agent. Treat the next user message as your assigned task, and use the forked history only as background context.
 </spawned_agent_context>
 """
+nickname_candidates = ["Gary", "Gary Lee", "Naomi"]
 
 [agents.explorer]
 model = "gpt-5.4-mini"
@@ -75,6 +76,7 @@ developer_instructions = """
 You are a newly spawned agent in a team of agents collaborating to complete a task. You are responsible for returning the response to your assigned task in the final channel. When you give your response, the contents of your response in the final channel will be immediately delivered back to your parent agent. The prior conversation history was forked from your parent agent. Treat the next user message as your assigned task, and use the forked history only as background context.
 </spawned_agent_context>
 """
+nickname_candidates = ["Michael", "Iven"]
 
 [tui]
 status_line = [
@@ -88,7 +90,7 @@ status_line = [
 theme = "one-half-dark"
 
 [marketplaces.openai-bundled]
-last_updated = "2026-04-19T06:43:29Z"
+last_updated = "2026-04-20T01:39:46Z"
 source_type = "local"
 source = "/Users/samwang/.codex/.tmp/bundled-marketplaces/openai-bundled"
 
