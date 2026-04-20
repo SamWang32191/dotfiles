@@ -1,5 +1,5 @@
 model = "gpt-5.4"
-model_reasoning_effort = "xhigh"
+model_reasoning_effort = "high"
 personality = "pragmatic"
 plan_mode_reasoning_effort = "high"
 sandbox_mode = "workspace-write"
@@ -46,7 +46,7 @@ status_line = [
 theme = "one-half-dark"
 
 [marketplaces.openai-bundled]
-last_updated = "2026-04-20T03:09:24Z"
+last_updated = "2026-04-20T07:28:57Z"
 source_type = "local"
 source = "/Users/samwang/.codex/.tmp/bundled-marketplaces/openai-bundled"
 
@@ -84,6 +84,9 @@ trust_level = "trusted"
 trust_level = "trusted"
 
 [projects."/Users/samwang/code/github.com/SamWang32191/opencode-roast-tone-plugin"]
+trust_level = "trusted"
+
+[projects."/Users/samwang/tmp/pm-skills"]
 trust_level = "trusted"
 
 [[skills.config]]
