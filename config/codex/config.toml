@@ -90,7 +90,7 @@ status_line = [
 theme = "one-half-dark"
 
 [marketplaces.openai-bundled]
-last_updated = "2026-04-20T01:39:46Z"
+last_updated = "2026-04-20T03:09:24Z"
 source_type = "local"
 source = "/Users/samwang/.codex/.tmp/bundled-marketplaces/openai-bundled"
 
