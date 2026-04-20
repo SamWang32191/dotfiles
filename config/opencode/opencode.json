@@ -59,7 +59,20 @@
       "gh release delete *": "deny",
       "gh api * -X DELETE": "deny",
       "gh api * --method DELETE": "deny",
-      "git push *": "ask"
+      "git push *": "ask",
+      "kubectl apply *": "ask",
+      "kubectl delete *": "ask",
+      "kubectl patch *": "ask",
+      "kubectl replace *": "ask",
+      "kubectl scale *": "ask",
+      "kubectl edit *": "ask",
+      "kubectl annotate *": "ask",
+      "kubectl label *": "ask",
+      "kubectl cordon *": "ask",
+      "kubectl uncordon *": "ask",
+      "kubectl drain *": "ask",
+      "kubectl taint *": "ask",
+      "kubectl rollout restart *": "ask"
     }
   }
 }
