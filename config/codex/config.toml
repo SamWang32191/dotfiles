@@ -1,5 +1,5 @@
 model = "gpt-5.4"
-model_reasoning_effort = "xhigh"
+model_reasoning_effort = "high"
 personality = "pragmatic"
 plan_mode_reasoning_effort = "high"
 sandbox_mode = "workspace-write"
@@ -21,13 +21,16 @@ network_access = true
 
 [features]
 default_mode_request_user_input = true
-multi_agent_v2 = true
 prevent_idle_sleep = true
 js_repl = true
 guardian_approval = true
 memories = true
 chronicle = false
 external_migration = true
+
+[features.multi_agent_v2]
+enabled = true
+usage_hint_enabled = false
 
 [notice]
 hide_full_access_warning = true
@@ -50,12 +53,12 @@ status_line = [
 theme = "nord"
 
 [marketplaces.openai-bundled]
-last_updated = "2026-04-22T05:01:20Z"
+last_updated = "2026-04-22T06:34:10Z"
 source_type = "local"
 source = "/Users/samwang/.codex/.tmp/bundled-marketplaces/openai-bundled"
 
 [memories]
-no_memories_if_mcp_or_web_search = true
+disable_on_external_context = true
 
 [plugins."github@openai-curated"]
 enabled = true
@@ -106,6 +109,9 @@ trust_level = "trusted"
 trust_level = "trusted"
 
 [projects."/Users/samwang/code/github.com/softleader/scins-asi-informix-api"]
+trust_level = "trusted"
+
+[projects."/Users/samwang/dotfiles"]
 trust_level = "trusted"
 
 [[skills.config]]
