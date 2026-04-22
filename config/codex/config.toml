@@ -7,10 +7,14 @@ approvals_reviewer = "guardian_subagent"
 approval_policy = "on-request"
 model_context_window = 1000000
 model_auto_compact_token_limit = 900000
+suppress_unstable_features_warning = true
 
 service_tier = "fast"
 
-notify = ["/Users/samwang/.codex/plugins/cache/openai-bundled/computer-use/1.0.755/Codex Computer Use.app/Contents/SharedSupport/SkyComputerUseClient.app/Contents/MacOS/SkyComputerUseClient", "turn-ended"]
+notify = [
+  "/Users/samwang/.codex/plugins/cache/openai-bundled/computer-use/1.0.755/Codex Computer Use.app/Contents/SharedSupport/SkyComputerUseClient.app/Contents/MacOS/SkyComputerUseClient",
+  "turn-ended",
+]
 
 [sandbox_workspace_write]
 network_access = true
@@ -22,7 +26,8 @@ prevent_idle_sleep = true
 js_repl = true
 guardian_approval = true
 memories = true
-chronicle = true
+chronicle = false
+external_migration = true
 
 [notice]
 hide_full_access_warning = true
@@ -42,10 +47,10 @@ status_line = [
   "weekly-limit",
   "context-used",
 ]
-theme = "one-half-dark"
+theme = "nord"
 
 [marketplaces.openai-bundled]
-last_updated = "2026-04-22T01:46:27Z"
+last_updated = "2026-04-22T05:01:20Z"
 source_type = "local"
 source = "/Users/samwang/.codex/.tmp/bundled-marketplaces/openai-bundled"
 
@@ -92,6 +97,15 @@ trust_level = "trusted"
 trust_level = "trusted"
 
 [projects."/Users/samwang/code/github.com/softleader/scins-asi-inspremum"]
+trust_level = "trusted"
+
+[projects."/Users/samwang/tmp/test-skills"]
+trust_level = "trusted"
+
+[projects."/Users/samwang/code/github.com/softleader/agent-skills"]
+trust_level = "trusted"
+
+[projects."/Users/samwang/code/github.com/softleader/scins-asi-informix-api"]
 trust_level = "trusted"
 
 [[skills.config]]
