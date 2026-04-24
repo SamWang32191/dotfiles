@@ -5,8 +5,6 @@ plan_mode_reasoning_effort = "high"
 sandbox_mode = "workspace-write"
 approvals_reviewer = "guardian_subagent"
 approval_policy = "on-request"
-model_context_window = 1000000
-model_auto_compact_token_limit = 900000
 suppress_unstable_features_warning = true
 
 service_tier = "fast"
@@ -35,12 +33,6 @@ usage_hint_enabled = false
 [notice]
 hide_full_access_warning = true
 
-[notice.external_config_migration_prompts.project_last_prompted_at]
-"/Users/samwang/tmp/Workspace/scins-asi-cie/scins-asi-frontend-cie" = 1776996704
-
-[notice.external_config_migration_prompts.projects]
-"/Users/samwang/tmp/Workspace/scins-asi-cie/scins-asi-frontend-cie" = true
-
 
 [agents]
 max_threads = 10
@@ -53,14 +45,20 @@ args = ["mcp"]
 
 
 [tui]
-status_line = ["current-dir", "git-branch", "model-with-reasoning", "context-used", "context-window-size"]
+status_line = [
+  "current-dir",
+  "git-branch",
+  "model-with-reasoning",
+  "context-used",
+  "context-window-size",
+]
 theme = "nord"
 
 [tui.model_availability_nux]
 "gpt-5.5" = 4
 
 [marketplaces.openai-bundled]
-last_updated = "2026-04-24T03:23:50Z"
+last_updated = "2026-04-24T04:28:45Z"
 source_type = "local"
 source = "/Users/samwang/.codex/.tmp/bundled-marketplaces/openai-bundled"
 
