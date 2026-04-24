@@ -75,6 +75,7 @@ If you need to inspect source code from any external GitHub repository, follow t
 
 3. **If the repo does NOT exist locally**, use the QUESTION TOOL to ask me to clone it before proceeding.
 
+When reading dependency source, match the runtime version — don't default to `main`.
 Do not inspect external GitHub source code via web tools or delegated subagents before the repo exists locally.  
 This rule also applies to all delegated subagents.
 
