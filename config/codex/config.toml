@@ -166,6 +166,9 @@ trust_level = "trusted"
 [projects."/Users/samwang/tmp/Workspace/scins-asi-cie/scins-asi-informix-api"]
 trust_level = "trusted"
 
+[projects."/Users/samwang/tmp/Workspace/scins-asi-cie/scins-asi-inspremum"]
+trust_level = "trusted"
+
 [[skills.config]]
 name = "superpowers:using-git-worktrees"
 enabled = false
