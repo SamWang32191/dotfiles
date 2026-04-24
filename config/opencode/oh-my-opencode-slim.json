@@ -4,7 +4,7 @@
   "presets": {
     "openai": {
       "orchestrator": {
-        "model": "openai/gpt-5.4",
+        "model": "openai/gpt-5.5-fast",
         "variant": "high",
         "skills": [
           "*"
@@ -14,7 +14,7 @@
         ]
       },
       "oracle": {
-        "model": "openai/gpt-5.4",
+        "model": "openai/gpt-5.5-fast",
         "variant": "high",
         "skills": [
           "receiving-code-review",
@@ -24,7 +24,7 @@
         "mcps": []
       },
       "librarian": {
-        "model": "openai/gpt-5.4-mini",
+        "model": "openai/gpt-5.4-mini-fast",
         "variant": "medium",
         "skills": [],
         "mcps": [
@@ -33,13 +33,13 @@
         ]
       },
       "explorer": {
-        "model": "openai/gpt-5.4-mini",
+        "model": "openai/gpt-5.4-mini-fast",
         "variant": "medium",
         "skills": [],
         "mcps": []
       },
       "designer": {
-        "model": "openai/gpt-5.4",
+        "model": "openai/gpt-5.5-fast",
         "variant": "medium",
         "skills": [
           "agent-browser"
@@ -55,7 +55,7 @@
     },
     "openai-spark": {
       "orchestrator": {
-        "model": "openai/gpt-5.4",
+        "model": "openai/gpt-5.5-fast",
         "variant": "high",
         "skills": [
           "*"
@@ -65,7 +65,7 @@
         ]
       },
       "oracle": {
-        "model": "openai/gpt-5.4",
+        "model": "openai/gpt-5.5-fast",
         "variant": "high",
         "skills": [
           "receiving-code-review",
@@ -75,7 +75,7 @@
         "mcps": []
       },
       "librarian": {
-        "model": "openai/gpt-5.4-mini",
+        "model": "openai/gpt-5.4-mini-fast",
         "variant": "medium",
         "skills": [],
         "mcps": [
@@ -84,13 +84,13 @@
         ]
       },
       "explorer": {
-        "model": "openai/gpt-5.4-mini",
+        "model": "openai/gpt-5.4-mini-fast",
         "variant": "medium",
         "skills": [],
         "mcps": []
       },
       "designer": {
-        "model": "openai/gpt-5.4",
+        "model": "openai/gpt-5.5-fast",
         "variant": "medium",
         "skills": [
           "agent-browser"
@@ -106,7 +106,7 @@
     },
     "openai-fast": {
       "orchestrator": {
-        "model": "openai/gpt-5.4-fast",
+        "model": "openai/gpt-5.5-fast",
         "variant": "high",
         "skills": [
           "*"
@@ -116,7 +116,7 @@
         ]
       },
       "oracle": {
-        "model": "openai/gpt-5.4-fast",
+        "model": "openai/gpt-5.5-fast",
         "variant": "xhigh",
         "skills": [
           "receiving-code-review",
@@ -141,7 +141,7 @@
         "mcps": []
       },
       "designer": {
-        "model": "openai/gpt-5.4-fast",
+        "model": "openai/gpt-5.5-fast",
         "variant": "medium",
         "skills": [
           "agent-browser"
@@ -149,7 +149,7 @@
         "mcps": []
       },
       "fixer": {
-        "model": "openai/gpt-5.4-fast",
+        "model": "openai/gpt-5.5-fast",
         "variant": "high",
         "skills": [],
         "mcps": []
