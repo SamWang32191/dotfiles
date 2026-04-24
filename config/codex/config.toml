@@ -1,5 +1,5 @@
-model = "gpt-5.4"
-model_reasoning_effort = "high"
+model = "gpt-5.5"
+model_reasoning_effort = "medium"
 personality = "pragmatic"
 plan_mode_reasoning_effort = "high"
 sandbox_mode = "workspace-write"
@@ -11,8 +11,9 @@ suppress_unstable_features_warning = true
 
 service_tier = "fast"
 
+
 notify = [
-  "/Users/samwang/.codex/plugins/cache/openai-bundled/computer-use/1.0.755/Codex Computer Use.app/Contents/SharedSupport/SkyComputerUseClient.app/Contents/MacOS/SkyComputerUseClient",
+  "/Users/samwang/.codex/plugins/cache/openai-bundled/computer-use/1.0.758/Codex Computer Use.app/Contents/SharedSupport/SkyComputerUseClient.app/Contents/MacOS/SkyComputerUseClient",
   "turn-ended",
 ]
 
@@ -26,7 +27,6 @@ js_repl = true
 guardian_approval = true
 memories = true
 chronicle = false
-external_migration = true
 
 [features.multi_agent_v2]
 enabled = true
@@ -35,10 +35,21 @@ usage_hint_enabled = false
 [notice]
 hide_full_access_warning = true
 
+[notice.external_config_migration_prompts.project_last_prompted_at]
+"/Users/samwang/tmp/Workspace/scins-asi-cie/scins-asi-frontend-cie" = 1776996704
+
+[notice.external_config_migration_prompts.projects]
+"/Users/samwang/tmp/Workspace/scins-asi-cie/scins-asi-frontend-cie" = true
+
+
 [agents]
 max_threads = 10
 max_depth = 1
 job_max_runtime_seconds = 3600
+
+[mcp_servers.gitnexus]
+command = "gitnexus"
+args = ["mcp"]
 
 
 [tui]
@@ -52,8 +63,11 @@ status_line = [
 ]
 theme = "nord"
 
+[tui.model_availability_nux]
+"gpt-5.5" = 1
+
 [marketplaces.openai-bundled]
-last_updated = "2026-04-22T06:34:10Z"
+last_updated = "2026-04-24T01:45:16Z"
 source_type = "local"
 source = "/Users/samwang/.codex/.tmp/bundled-marketplaces/openai-bundled"
 
@@ -67,6 +81,9 @@ enabled = true
 enabled = true
 
 [plugins."computer-use@openai-bundled"]
+enabled = true
+
+[plugins."browser-use@openai-bundled"]
 enabled = true
 
 [projects."/Users/samwang/tmp/Workspace/Iris"]
@@ -112,6 +129,24 @@ trust_level = "trusted"
 trust_level = "trusted"
 
 [projects."/Users/samwang/dotfiles"]
+trust_level = "trusted"
+
+[projects."/Users/samwang/tmp/Workspace/TransGlobe"]
+trust_level = "trusted"
+
+[projects."/Users/samwang/tmp/Workspace/scins-asi-cie"]
+trust_level = "trusted"
+
+[projects."/Users/samwang/code/github.com/abhigyanpatwari/GitNexus"]
+trust_level = "trusted"
+
+[projects."/Users/samwang/tmp/Workspace/scins-asi-cie/scins-asi-auth"]
+trust_level = "trusted"
+
+[projects."/Users/samwang/code/github.com/softleader/softleader-erp"]
+trust_level = "trusted"
+
+[projects."/Users/samwang/tmp/Workspace/scins-asi-cie/scins-asi-frontend-cie"]
 trust_level = "trusted"
 
 [[skills.config]]

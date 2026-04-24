@@ -68,5 +68,11 @@
       "kubectl taint *": "ask",
       "kubectl rollout restart *": "ask"
     }
+  },
+  "mcp": {
+    "gitnexus": {
+      "type": "local",
+      "command": ["gitnexus", "mcp"]
+    }
   }
 }
