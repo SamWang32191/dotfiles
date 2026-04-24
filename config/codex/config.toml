@@ -1,5 +1,5 @@
 model = "gpt-5.5"
-model_reasoning_effort = "high"
+model_reasoning_effort = "xhigh"
 personality = "pragmatic"
 plan_mode_reasoning_effort = "high"
 sandbox_mode = "workspace-write"
@@ -53,21 +53,14 @@ args = ["mcp"]
 
 
 [tui]
-status_line = [
-  "current-dir",
-  "git-branch",
-  "model-with-reasoning",
-  "five-hour-limit",
-  "weekly-limit",
-  "context-used",
-]
+status_line = ["current-dir", "git-branch", "model-with-reasoning", "context-used", "context-window-size"]
 theme = "nord"
 
 [tui.model_availability_nux]
-"gpt-5.5" = 3
+"gpt-5.5" = 4
 
 [marketplaces.openai-bundled]
-last_updated = "2026-04-24T01:45:16Z"
+last_updated = "2026-04-24T03:23:50Z"
 source_type = "local"
 source = "/Users/samwang/.codex/.tmp/bundled-marketplaces/openai-bundled"
 
