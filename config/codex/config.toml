@@ -1,5 +1,5 @@
 model = "gpt-5.5"
-model_reasoning_effort = "medium"
+model_reasoning_effort = "xhigh"
 personality = "pragmatic"
 plan_mode_reasoning_effort = "high"
 sandbox_mode = "workspace-write"
@@ -57,12 +57,12 @@ theme = "nord"
 "gpt-5.5" = 4
 
 [marketplaces.openai-bundled]
-last_updated = "2026-04-27T01:42:59Z"
+last_updated = "2026-04-27T07:19:42Z"
 source_type = "local"
 source = "/Users/samwang/.codex/.tmp/bundled-marketplaces/openai-bundled"
 
 [marketplaces.openai-primary-runtime]
-last_updated = "2026-04-24T02:24:33Z"
+last_updated = "2026-04-27T07:24:33Z"
 source_type = "local"
 source = "/Users/samwang/.cache/codex-runtimes/codex-primary-runtime/plugins/openai-primary-runtime"
 
@@ -160,6 +160,15 @@ trust_level = "trusted"
 trust_level = "trusted"
 
 [projects."/Users/samwang/tmp/Workspace/scins-asi-cie/local-maven-repo"]
+trust_level = "trusted"
+
+[projects."/Users/samwang/code/github.com/softleader/scins-asi-frontend-cie"]
+trust_level = "trusted"
+
+[projects."/Users/samwang/Documents/Codex/2026-04-27/ps"]
+trust_level = "trusted"
+
+[projects."/Users/samwang/code/github.com/SamWang32191/ps-price"]
 trust_level = "trusted"
 
 [[skills.config]]
