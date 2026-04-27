@@ -1,6 +1,6 @@
 {
   "$schema": "https://unpkg.com/oh-my-opencode-slim@latest/oh-my-opencode-slim.schema.json",
-  "preset": "openai-fast",
+  "preset": "openai",
   "presets": {
     "openai": {
       "orchestrator": {
@@ -10,7 +10,8 @@
           "*"
         ],
         "mcps": [
-          "websearch"
+          "websearch",
+          "gitnexus"
         ]
       },
       "oracle": {
@@ -21,7 +22,9 @@
           "requesting-code-review",
           "simplify"
         ],
-        "mcps": []
+        "mcps": [
+          "gitnexus"
+        ]
       },
       "librarian": {
         "model": "openai/gpt-5.4-mini-fast",
@@ -36,58 +39,9 @@
         "model": "openai/gpt-5.4-mini-fast",
         "variant": "medium",
         "skills": [],
-        "mcps": []
-      },
-      "designer": {
-        "model": "openai/gpt-5.5-fast",
-        "variant": "medium",
-        "skills": [
-          "agent-browser"
-        ],
-        "mcps": []
-      },
-      "fixer": {
-        "model": "openai/gpt-5.3-codex",
-        "variant": "high",
-        "skills": [],
-        "mcps": []
-      }
-    },
-    "openai-spark": {
-      "orchestrator": {
-        "model": "openai/gpt-5.5-fast",
-        "variant": "high",
-        "skills": [
-          "*"
-        ],
         "mcps": [
-          "websearch"
+          "gitnexus"
         ]
-      },
-      "oracle": {
-        "model": "openai/gpt-5.5-fast",
-        "variant": "high",
-        "skills": [
-          "receiving-code-review",
-          "requesting-code-review",
-          "simplify"
-        ],
-        "mcps": []
-      },
-      "librarian": {
-        "model": "openai/gpt-5.4-mini-fast",
-        "variant": "medium",
-        "skills": [],
-        "mcps": [
-          "websearch",
-          "context7"
-        ]
-      },
-      "explorer": {
-        "model": "openai/gpt-5.4-mini-fast",
-        "variant": "medium",
-        "skills": [],
-        "mcps": []
       },
       "designer": {
         "model": "openai/gpt-5.5-fast",
@@ -99,57 +53,6 @@
       },
       "fixer": {
         "model": "openai/gpt-5.3-codex-spark",
-        "variant": "high",
-        "skills": [],
-        "mcps": []
-      }
-    },
-    "openai-fast": {
-      "orchestrator": {
-        "model": "openai/gpt-5.5-fast",
-        "variant": "high",
-        "skills": [
-          "*"
-        ],
-        "mcps": [
-          "websearch"
-        ]
-      },
-      "oracle": {
-        "model": "openai/gpt-5.5-fast",
-        "variant": "xhigh",
-        "skills": [
-          "receiving-code-review",
-          "requesting-code-review",
-          "simplify"
-        ],
-        "mcps": []
-      },
-      "librarian": {
-        "model": "openai/gpt-5.4-mini-fast",
-        "variant": "medium",
-        "skills": [],
-        "mcps": [
-          "websearch",
-          "context7"
-        ]
-      },
-      "explorer": {
-        "model": "openai/gpt-5.4-mini-fast",
-        "variant": "medium",
-        "skills": [],
-        "mcps": []
-      },
-      "designer": {
-        "model": "openai/gpt-5.5-fast",
-        "variant": "medium",
-        "skills": [
-          "agent-browser"
-        ],
-        "mcps": []
-      },
-      "fixer": {
-        "model": "openai/gpt-5.5-fast",
         "variant": "high",
         "skills": [],
         "mcps": []

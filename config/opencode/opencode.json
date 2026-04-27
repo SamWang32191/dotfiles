@@ -4,7 +4,7 @@
     "@franlol/opencode-md-table-formatter@latest",
     "opencode-roast-tone-plugin@latest",
     "opencode-priority-rule-plugin@latest",
-    "oh-my-openagent@latest"
+    "oh-my-opencode-slim@latest"
   ],
   "model": "openai/gpt-5.5-fast",
   "small_model": "openai/gpt-5.3-codex-spark",
