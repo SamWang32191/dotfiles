@@ -1,14 +1,14 @@
-model = "gpt-5.5"
-model_reasoning_effort = "xhigh"
+model = "gpt-5.4"
+model_reasoning_effort = "medium"
 personality = "pragmatic"
 plan_mode_reasoning_effort = "high"
 sandbox_mode = "workspace-write"
 approvals_reviewer = "guardian_subagent"
 approval_policy = "on-request"
 suppress_unstable_features_warning = true
-
+model_context_window = 1000000
+model_auto_compact_token_limit = 900000
 service_tier = "fast"
-
 
 notify = [
   "/Users/samwang/.codex/plugins/cache/openai-bundled/computer-use/1.0.758/Codex Computer Use.app/Contents/SharedSupport/SkyComputerUseClient.app/Contents/MacOS/SkyComputerUseClient",
@@ -35,7 +35,6 @@ hide_full_access_warning = true
 
 
 [agents]
-max_threads = 10
 max_depth = 1
 job_max_runtime_seconds = 3600
 
@@ -58,7 +57,7 @@ theme = "nord"
 "gpt-5.5" = 4
 
 [marketplaces.openai-bundled]
-last_updated = "2026-04-24T04:28:45Z"
+last_updated = "2026-04-27T01:42:59Z"
 source_type = "local"
 source = "/Users/samwang/.codex/.tmp/bundled-marketplaces/openai-bundled"
 
@@ -158,6 +157,9 @@ trust_level = "trusted"
 trust_level = "trusted"
 
 [projects."/Users/samwang/tmp/Workspace/scins-asi-cie/scins-asi-inspremum"]
+trust_level = "trusted"
+
+[projects."/Users/samwang/tmp/Workspace/scins-asi-cie/local-maven-repo"]
 trust_level = "trusted"
 
 [[skills.config]]
