@@ -71,7 +71,7 @@ If you need to inspect source code from any external GitHub repository, follow t
    - Example: `github.com/spring-projects/spring-boot` → `~/code/github.com/spring-projects/spring-boot`  
    Use tools to verify the directory exists and contains the expected source files.
 
-2. **If the repo already exists locally**, use it directly — no need to ask.
+2. **If the repo already exists locally**, use it directly — no need to ask. When reading dependency source, match the runtime version — don't default to main.
 
 3. **If the repo does NOT exist locally**, use the QUESTION TOOL to ask me to clone it before proceeding.
 
