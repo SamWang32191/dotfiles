@@ -52,7 +52,7 @@
         "mcps": []
       },
       "fixer": {
-        "model": "openai/gpt-5.3-codex-spark",
+        "model": "openai/gpt-5.3-codex",
         "variant": "high",
         "skills": [],
         "mcps": []

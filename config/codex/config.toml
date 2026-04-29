@@ -57,7 +57,7 @@ theme = "nord"
 "gpt-5.5" = 4
 
 [marketplaces.openai-bundled]
-last_updated = "2026-04-29T01:41:45Z"
+last_updated = "2026-04-29T02:06:58Z"
 source_type = "local"
 source = "/Users/samwang/.codex/.tmp/bundled-marketplaces/openai-bundled"
 
