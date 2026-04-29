@@ -57,7 +57,7 @@ theme = "nord"
 "gpt-5.5" = 4
 
 [marketplaces.openai-bundled]
-last_updated = "2026-04-27T07:19:42Z"
+last_updated = "2026-04-29T01:41:45Z"
 source_type = "local"
 source = "/Users/samwang/.codex/.tmp/bundled-marketplaces/openai-bundled"
 
@@ -169,6 +169,12 @@ trust_level = "trusted"
 trust_level = "trusted"
 
 [projects."/Users/samwang/code/github.com/SamWang32191/ps-price"]
+trust_level = "trusted"
+
+[projects."/Users/samwang/code/github.com/softleader/jasmine-b2b-ctbcins"]
+trust_level = "trusted"
+
+[projects."/Users/samwang/.m2"]
 trust_level = "trusted"
 
 [[skills.config]]
