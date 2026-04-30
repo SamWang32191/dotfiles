@@ -44,6 +44,7 @@ args = ["mcp"]
 
 
 [tui]
+notification_condition = "always"
 status_line = [
   "current-dir",
   "git-branch",
@@ -57,7 +58,7 @@ theme = "nord"
 "gpt-5.5" = 4
 
 [marketplaces.openai-bundled]
-last_updated = "2026-04-29T02:06:58Z"
+last_updated = "2026-04-30T01:45:12Z"
 source_type = "local"
 source = "/Users/samwang/.codex/.tmp/bundled-marketplaces/openai-bundled"
 
@@ -178,6 +179,12 @@ trust_level = "trusted"
 trust_level = "trusted"
 
 [projects."/Users/samwang/code/github.com/softleader/slke"]
+trust_level = "trusted"
+
+[projects."/Users/samwang/code/github.com/softleader/kapok-policy"]
+trust_level = "trusted"
+
+[projects."/Users/samwang/code/github.com/softleader/kapok-wiki"]
 trust_level = "trusted"
 
 [[skills.config]]
