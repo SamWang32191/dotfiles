@@ -187,6 +187,9 @@ trust_level = "trusted"
 [projects."/Users/samwang/code/github.com/softleader/kapok-wiki"]
 trust_level = "trusted"
 
+[projects."/Users/samwang/code/github.com/softleader/iris-setting"]
+trust_level = "trusted"
+
 [[skills.config]]
 name = "superpowers:using-git-worktrees"
 enabled = false
